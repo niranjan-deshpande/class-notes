@@ -160,6 +160,8 @@ dl.gloss dd { margin: 0; font-size: 16px; line-height: 1.5; }
 .exs .th-k { color: var(--hand); font-weight: 600; }
 .pf .th-k { color: var(--ink-3); }
 .th-m .tag { margin: 0; }
+.tag.src { color: var(--ink-3); font-weight: 600; }
+.legend-2 { margin-top: 6px; }
 .th-n { font-weight: 600; }
 .th-pf { font-size: 12.5px; text-decoration: none; color: var(--ink-3); white-space: nowrap; }
 .th-pf:hover { color: var(--accent); }
