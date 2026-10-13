@@ -51,7 +51,7 @@
     <header class="course-head">
       <p class="kicker">Phil 147</p>
       <h1>Philosophy of Language</h1>
-      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–9</p>
+      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–12</p>
       <p class="lede">My lecture notes, cleaned up and organized by lecture, filled in from the handouts where the notes were thin or abbreviated. Green boxes and tags mark material added from the handout.</p>
     </header>
 
@@ -147,6 +147,35 @@
         <div><dt>Context</dt><dd>A possible occasion of use, which fixes the interpretation of context-sensitive expressions. Formally, a tagged list (speaker, audience, place, time, demonstrata).</dd></div>
         <div><dt>Circumstance</dt><dd>A possible situation at which a content is evaluated as true or false.</dd></div>
         <div><dt>Metasemantics</dt><dd>The study of the facts in virtue of which expressions have their meanings (vs. semantics, the study of meaning).</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-10">Lec 10 · Lewis</a></h3>
+      <dl class="gloss">
+        <div><dt>Counterfactual</dt><dd>“If it had been that p, it would have been that q,” written <span class="logic">p □→ q</span>.</dd></div>
+        <div><dt>Material conditional</dt><dd><span class="logic">p ⊃ q</span> is true iff p is false or q is true.</dd></div>
+        <div><dt>Strict conditional</dt><dd><span class="logic">□(p ⊃ q)</span>: the material conditional holds in every accessible world.</dd></div>
+        <div><dt>Sobel sequence</dt><dd>A sequence of counterfactuals, each adding to the previous antecedent and flipping the consequent (“…they’d topple over; but if they also used crutches, they wouldn’t”).</dd></div>
+        <div><dt>System of spheres ($)</dt><dd>Nested sets of worlds around the actual world, ranking worlds by similarity to it. The actual world is at the top; ties are allowed.</dd></div>
+        <div><dt>Modal realism</dt><dd>Other possible worlds are just as real as the actual world.</dd></div>
+        <div><dt>Ersatzism</dt><dd>Possible worlds are stand-ins (<i>Ersatz</i>), not further real worlds.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-11">Lec 11 · Quine</a></h3>
+      <dl class="gloss">
+        <div><dt>Essential / contingent property</dt><dd>Essential: a property a thing couldn’t lose and still exist. Contingent: one it could have lacked.</dd></div>
+        <div><dt>Reconstruction</dt><dd>An analysis of a notion that sorts our talk using it into the unproblematic parts and the parts to be jettisoned.</dd></div>
+        <div><dt>Semantical predicate</dt><dd>A predicate true of sentences, like “contains two numerals” or (for Quine) “is provable.”</dd></div>
+        <div><dt>Objectual quantification</dt><dd>Quantification whose truth depends only on whether some object satisfies the open sentence, however that object is referred to.</dd></div>
+        <div><dt>Aristotelian essentialism</dt><dd>Objects have essential properties in themselves, independent of how they’re described.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-12">Lec 12 · Kripke</a></h3>
+      <dl class="gloss">
+        <div><dt>Description Theory</dt><dd>A name’s reference is fixed by a cluster of descriptions the speaker associates with it (theses i–vi and C).</dd></div>
+        <div><dt>Direct reference</dt><dd>A name contributes its referent directly, not via a descriptive sense.</dd></div>
+        <div><dt>Rigid designator</dt><dd>An expression that refers to the same object in every possible world in which it refers at all.</dd></div>
+        <div><dt>Non-rigid designator</dt><dd>An expression that refers to different objects in at least two possible worlds.</dd></div>
+        <div><dt>Psychological essentialism</dt><dd>Our (especially children’s) strong tendency to ascribe essences to things, including things that don’t have them.</dd></div>
       </dl>
     </section>
 
@@ -570,7 +599,204 @@
       <h4>Kaplan’s four components</h4>
       <div class="chain"><span class="c">Context</span><span class="arr">— character →</span><span class="c">Content</span><span class="arr">— at a →</span><span class="c">Circumstance</span><span class="arr">→</span><span class="c">Truth value</span></div>
 
-      <nav class="pager"><a class="prev" href="#phil-147-lec-8"><small>Previous</small>Lec 8 · Strawson: on referring</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
+      <nav class="pager"><a class="prev" href="#phil-147-lec-8"><small>Previous</small>Lec 8 · Strawson: on referring</a><a class="next" href="#phil-147-lec-10"><small>Next</small>Lec 10 · Lewis: counterfactuals</a></nav>
+    </section>
+
+    <!-- ============================ LEC 10 ============================ -->
+    <section class="lec" id="phil-147-lec-10" data-n="10" data-short="Lewis: counterfactuals">
+      <h2><span class="num">Lecture 10</span>Lewis: counterfactuals</h2>
+      <p class="reading">Lewis, <i>Counterfactuals</i> (1973), ch. 1</p>
+
+      <h3>Modality and possible worlds</h3>
+      <p>Originally “modality” just meant a <em>way</em> (mode) of being or doing; the lingo comes from Kant. “Mary <em>must</em> keep her promise” is put forward apodeictically, “Mary keeps her promise” categorically, and “Mary <em>may</em> keep her promise” problematically.</p>
+      <p>Kaplan already treated propositions as implicitly modal. Putting one forward divides the possible worlds by whether it’s true there and says we’re on the true side, so it’s a claim about <em>all</em> worlds. That’s why “BN” and “I” have to be treated as referring expressions, not descriptions: descriptions behave very differently under modal operators (see <a href="#phil-147-lec-12">Lec 12</a>).</p>
+
+      <h3>Why counterfactuals?</h3>
+      <p>Counterfactuals (“if it had been that p, it would have been that q,” written <span class="logic">p □→ q</span>) matter for:</p>
+      <ol>
+        <li><strong>the analysis of causation</strong>, since a causal relation might just be counterfactual dependence;</li>
+        <li><strong>decision theory</strong>, which compares actions by what would happen under each.</li>
+      </ol>
+      <p>Lewis’s theoretical ambitions differ from everyone we’ve read so far:</p>
+      <ul>
+        <li><strong>The logical project:</strong> how can natural language make for valid arguments? Which inference rules are correct for counterfactuals? Some counterfactual inferences are clearly well supported; others just seem faulty.</li>
+        <li><strong>The metaphysical project:</strong> what are counterfactuals really about? If they’re claims about other worlds, what kind of evidence could we have for them?</li>
+      </ul>
+      <p>The two projects are closely intertwined.</p>
+
+      <h3>From the material conditional to spheres of similarity</h3>
+      <ul>
+        <li><strong>Material conditional:</strong> <span class="logic">p ⊃ q</span> is true iff p is false or q is true. It validates modus ponens, but it makes every counterfactual with a false antecedent true. Kangaroos do have tails, so “if kangaroos didn’t have tails, they’d have wings” comes out true.</li>
+        <li><strong>Strict conditional:</strong> <span class="logic">□(p ⊃ q)</span>, the material conditional holding in every accessible world. This rules out accidental connections, but it fails on <dfn>Sobel sequences</dfn>: “If kangaroos had no tails, they’d topple over; but if they had no tails and used crutches, they wouldn’t.” No single set of accessible worlds makes both halves true non-vacuously. Equivalently, strict conditionals validate strengthening the antecedent, and counterfactuals don’t.</li>
+      </ul>
+      <p>Lewis’s fix uses two pieces of machinery: <strong>possible worlds</strong> and a <strong>similarity ranking</strong>. A <dfn>system of spheres</dfn> $ nests worlds around the actual world @, with more similar worlds in smaller spheres. Every counterfactual is evaluated against the <em>same</em> ranking, but each one looks at a different region of it.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Lewis’s semantics</span></div><div class="th-b"><p><span class="logic">p □→ q</span> is true iff either there are no accessible p-worlds (vacuous truth), or q is true in all the closest p-worlds (the p-worlds in the smallest sphere that contains any). The “might” counterfactual <span class="logic">◇→</span> gets a different analysis.</p></div></div>
+      <p>Features of the ranking show up as logical properties:</p>
+      <ul>
+        <li><strong>Ties are allowed.</strong> Take “If Bizet and Verdi had been compatriots, they’d have been French” and “…they’d have been Italian.” The closest compatriot worlds are tied, some French and some Italian, so both come out false, as we intuitively judge.</li>
+        <li><strong>@ is at the top.</strong> That’s what licenses modus ponens with counterfactuals. From <span class="logic">p □→ q</span>, every closest p-world is a q-world. From p, @ is a p-world, and since it’s at the top it’s one of the closest. So @ is a q-world, i.e. q.</li>
+        <li><strong>No transitivity.</strong> Indicative conditionals chain; counterfactuals don’t:
+          <ul class="ex">
+            <li>If Harvard is in Cambridge, it’s in MA; if it’s in MA, it’s in the US; so if it’s in Cambridge, it’s in the US. <span class="gl">valid</span></li>
+            <li>If Hoover had been born Russian, he’d have been a communist; if he’d been a communist, he’d have been a traitor; so if he’d been born Russian, he’d have been a traitor. <span class="gl">invalid</span></li>
+          </ul>
+          (The Hoover inference seems valid to me, though? Maybe it turns on “traitor to whom.”)
+        </li>
+      </ul>
+
+      <h3>The metaphysical project: modal realism</h3>
+      <p>Lewis is a <dfn>modal realist</dfn>: other possible worlds are just as real as ours, and “actual” just means <em>this</em> one. Objections:</p>
+      <ul>
+        <li><strong>The incredulous stare.</strong> This is the most common reaction. But everyone has to take <em>some</em> things for granted, and this objection is just people being content to presuppose the explanandum.</li>
+        <li><strong>Epistemology.</strong> If other worlds are causally isolated from us, how can we know anything about them? Evaluating counterfactuals seems to require <em>contingent</em> truths about other worlds, but we learn contingent truths only through perception, which is causal.</li>
+        <li><strong>Ethics.</strong> If every possible world is real, then whatever we do, the bad things still happen somewhere. Are we just moving harm and benefit around?</li>
+      </ul>
+      <p><dfn>Ersatzism</dfn> (<i>Ersatz</i> = substitute) is an alternative. The semantics doesn’t need <em>real</em> worlds, only some points of evaluation, a $, and a similarity notion. So you can keep Lewis’s logic and give worlds a different foundation, e.g. as stand-ins <span class="src">(Stalnaker 1976)</span>.</p>
+
+      <h3>Is similarity the right notion?</h3>
+      <p>Similarity is super weird: every world is similar to ours in some ways and dissimilar in others. Ordinarily we have to specify a <em>respect</em> of comparison, but Lewis fixes his spheres by <em>overall</em> similarity, without one.</p>
+      <ul>
+        <li><strong>Caesar:</strong> “If Caesar had fought in Vietnam, he’d have used catapults” vs. “…he’d have dropped an atomic bomb.” Each preserves a different invariant. So maybe different counterfactuals need different similarity notions, set by context?</li>
+        <li><strong>Nixon and the button:</strong> Nixon is told the USSR has launched a nuclear attack and must decide whether to push “the button”; then it turns out to be a false alarm. “If Nixon had pushed the button, there’d have been a nuclear holocaust” seems true. But isn’t the most similar world one where the button just malfunctions, since the rest of history then stays the same?</li>
+      </ul>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-9"><small>Previous</small>Lec 9 · Kaplan: demonstratives</a><a class="next" href="#phil-147-lec-11"><small>Next</small>Lec 11 · Quine: three grades</a></nav>
+    </section>
+
+    <!-- ============================ LEC 11 ============================ -->
+    <section class="lec" id="phil-147-lec-11" data-n="11" data-short="Quine: three grades">
+      <h2><span class="num">Lecture 11</span>Quine: three grades of modal involvement</h2>
+      <p class="reading">Quine, <i>“Three Grades of Modal Involvement”</i> (1953)</p>
+
+      <h3>Quine’s suspicion of modality</h3>
+      <p>Some features of a thing are <dfn>contingent</dfn>: Alan Garber is President of Harvard, but he might not have been. Others are supposedly <dfn>essential</dfn>: features it couldn’t lose and still exist. Many philosophers treat possibility and necessity as basic concepts and explain other things in terms of them.</p>
+      <p>Quine prefers a “desert landscape” to the “jungle”: the absolute minimum. That preference comes from a sense of futility. Every few hundred years people reject metaphysics as making no progress.</p>
+      <ul>
+        <li>Is rationality essential to humans? You construct an edge case, revise, find more cases, and so on. After all that, are we getting anything interesting? Coming up with ever more complicated theories seems degenerating, unlike in physics.</li>
+        <li>Hume went all the way: a book with neither abstract reasoning about quantity or number nor experimental reasoning about matters of fact should be committed to the flames as sophistry and illusion.</li>
+      </ul>
+      <p>But Hume is too extreme. We do need modal talk: natural science needs it to tell a law from a mere correlation. (I don’t like this: can’t you do all of natural science without a grounding theory of modality??)</p>
+      <p>So Quine wants a <dfn>reconstruction</dfn> of necessity: an analysis that keeps the parts of our modal talk that commit us to the right things and jettisons the rest. Compare “nations”: we ascribe some really weird properties to them, and we can reconstruct the notion by analyzing it from the ground up. Quine’s verdict on the three grades:</p>
+      <ol>
+        <li>necessity as a predicate of sentences: <strong>good</strong>;</li>
+        <li>necessity as an operator on statements: reducible to the first, but tempting;</li>
+        <li>quantifying into modal contexts: <strong>bad</strong>, because it leads back into the jungle of Aristotelian essentialism.</li>
+      </ol>
+      <p>Kripke’s <i>Naming and Necessity</i> is aimed squarely at this (see <a href="#phil-147-lec-12">Lec 12</a>).</p>
+
+      <h3>First grade: necessity as a semantical predicate</h3>
+      <p>Start with quotation. “Cicero was a Roman orator” is about the man. “‘Cicero’ has six letters” is about the name, and it’s true regardless of anything about the man. So substitution fails inside quotes.</p>
+      <p>Substitution fails for necessity in exactly the same way:</p>
+      <div class="pair">
+        <div><p class="pair-h">Necessity</p><ul class="ex">
+          <li>It’s necessary that 9 &gt; 5.</li>
+          <li>The number of planets is 9.</li>
+          <li><span class="bad">✗</span>So it’s necessary that the number of planets &gt; 5.</li>
+        </ul></div>
+        <div><p class="pair-h">Quotation</p><ul class="ex">
+          <li>“9 is greater than 5” contains two numerals.</li>
+          <li>The number of planets is 9.</li>
+          <li><span class="bad">✗</span>So “the number of planets is greater than 5” contains two numerals.</li>
+        </ul></div>
+      </div>
+      <p>(The necessity conclusion is arguably ambiguous, though. “Necessarily, however many planets there are, there are more than 5” is false. “The number that is in fact the number of planets (9) is necessarily &gt; 5” is true.)</p>
+      <p>So Quine’s idea is that necessity is a property of <strong>sentences</strong>: <strong>provability in a logical system</strong>, i.e. axioms plus rules for proving further theorems. Read “it is necessary that…” as “this sentence is provable: …”. That makes necessity a <dfn>semantical predicate</dfn>, true of sentences just as “contains two numerals” is.</p>
+      <ul>
+        <li>A standard system that can prove arithmetic proves “9 &gt; 5” but can’t even process “planets.” That gives the right truth values.</li>
+        <li>Is Alan Garber essentially rational? “Garber is rational” isn’t provable, but “The rational President of Harvard is rational” is. So the question only makes sense relative to a way of speaking about him.</li>
+      </ul>
+
+      <h3>Problems for the first grade</h3>
+      <p><strong>Nickel: there are no essences here at all.</strong> On Quine’s view, if you refer to Garber with a term that includes rationality, he’s “necessarily” rational; otherwise he isn’t. So the <em>terms</em> have these features, and the features don’t carry over to the person. It’s like an Anglicized name: having an English name doesn’t make someone English. So it’s better to say that on the first grade there’s no such thing as essential properties.</p>
+      <p><strong>Which system?</strong> Provability is relative to a system, and even laws of nature get relativized: Newton’s laws are provable in some systems and not in others. We can even build systems where it’s not necessary that 9 &gt; 5. Why not build a system with the axiom “x is human ⊃ □(x is rational)”? (Can’t we construct whatever system we need for every claim? Then necessity basically doesn’t exist.) So how do we judge one system better than another? Quine rejects the distinction between what we stipulate to be true and what we have good reason to believe. Is this a metaphysical question? Quine doesn’t want those.</p>
+
+      <h3>Third grade: quantifying into modal contexts</h3>
+      <p>“Somebody stole my cookies” is true iff some object satisfies “x stole my cookies,” regardless of how we refer to it. If Cookie Monster is the blue muppet, “Cookie Monster stole my cookies” and “The blue muppet stole my cookies” must agree in truth value. Quine calls this quantification <dfn>objectual</dfn>.</p>
+      <p>Now quantify <em>into</em> necessity: “Someone is such that it is necessary that they are rational.” That’s true iff some object is necessarily rational, however we refer to it. So it assumes objects have essential properties in themselves: <dfn>Aristotelian essentialism</dfn>. (But why must these properties be necessary?)</p>
+      <p>The same route takes you from <span class="logic">a = b</span> to <span class="logic">□(a = b)</span>:</p>
+      <ol>
+        <li><span class="logic">∀x □(x = x)</span>.</li>
+        <li>Hesperus = Phosphorus, so by substitution, <span class="logic">□(H = P)</span>.</li>
+        <li>But then there’s no world where H ≠ P. That seems wrong, since we <em>learned</em> H = P, which seemed to narrow down the range of worlds.</li>
+      </ol>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-10"><small>Previous</small>Lec 10 · Lewis: counterfactuals</a><a class="next" href="#phil-147-lec-12"><small>Next</small>Lec 12 · Kripke: naming &amp; necessity I</a></nav>
+    </section>
+
+    <!-- ============================ LEC 12 ============================ -->
+    <section class="lec" id="phil-147-lec-12" data-n="12" data-short="Kripke: naming &amp; necessity I">
+      <h2><span class="num">Lecture 12</span>Kripke: naming and necessity I</h2>
+      <p class="reading">Kripke, <i>Naming and Necessity</i> (1972), Lecture I</p>
+
+      <h3>Why Kripke was revolutionary</h3>
+      <p><i>Naming and Necessity</i> has three themes:</p>
+      <ol>
+        <li><strong>the return of metaphysics</strong>, against Quine’s “Three Grades”;</li>
+        <li><strong>the rejection of descriptivist theories</strong> of reference (Frege, Russell) in favor of <dfn>direct reference</dfn>;</li>
+        <li><strong>the causal theory of reference</strong>: what we say depends on how we’re embedded in the social and natural world.</li>
+      </ol>
+      <p>It attacks descriptivism with three arguments: <strong>modal</strong>, <strong>epistemic</strong>, and <strong>semantic</strong>. Lecture I is the modal one. But the result runs into questions. With no role for anything like Fregean sense, what about informative identities, belief ascriptions, and communication?</p>
+
+      <h3>The Description Theory</h3>
+      <p>When I talk about Aristotle, what makes my intention about the philosopher and not the shipping magnate? The natural answer: I have descriptive information in mind that identifies him, and if you asked for clarification I could give it. Indeed, if I <em>can’t</em> answer, it seems I’m not really talking about anyone. Suppose “wrote the <i>Odyssey</i> and <i>Iliad</i>” is the only description I have of Homer. Then if I say “maybe Homer didn’t write the <i>Odyssey</i> and <i>Iliad</i>,” I don’t seem to be speaking about anyone.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Description Theory <span class="src">(handout)</span></span></div><div class="th-b">
+        <ol style="list-style:none;padding-left:0">
+          <li>(i) A name “X” has a corresponding cluster of properties: the φ such that the speaker believes “φX.”</li>
+          <li>(ii) One or more of them are believed to pick out a unique individual.</li>
+          <li>(iii) If most (or a weighted most) of the φs are satisfied by a unique object y, y is the referent.</li>
+          <li>(iv) If there’s no unique object, “X” doesn’t refer.</li>
+          <li>(v) “If X exists, X has most of the φs” is known a priori.</li>
+          <li>(vi) …and it expresses a necessary truth.</li>
+          <li>(C) The account can’t be circular: the properties can’t themselves involve reference ineliminably.</li>
+        </ol>
+      </div></div>
+      <ul>
+        <li><strong>(v) is the epistemic side.</strong> If I know “Aristotle” carries the description “philosopher,” then I know a priori that Aristotle is a philosopher.</li>
+        <li><strong>(vi) is the modal side</strong>, and both Kaplan-style and Quinean theorists end up committed to it:
+          <ul>
+            <li><strong>Comfortable with possible worlds:</strong> “Necessarily, if there’s a last great philosopher of antiquity, the LGPoA is a philosopher” is true. If “Aristotle” abbreviates that description (Russell), then “Necessarily, if Aristotle exists, Aristotle is a philosopher” is true as well.</li>
+            <li><strong>Quine:</strong> “If Aristotle exists, Aristotle is a philosopher” just <em>is</em> the description sentence, which is provable, and provability is all necessity is.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>The modal argument</h3>
+      <ul class="ex" style="list-style:none">
+        <li>(7) It is necessary that the last great philosopher of antiquity was a philosopher. <span class="gl">true</span></li>
+        <li>(8) It is necessary that Aristotle was a philosopher. <span class="gl">false</span></li>
+      </ul>
+      <p>So they can’t mean the same thing. Done! “Necessary” works like universal quantification over worlds: every world must conform, and in some world Aristotle never went into philosophy. “The LGPoA” picks out different people in different worlds; “Aristotle” doesn’t.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Rigid designator</span></div><div class="th-b"><p>An expression e is a rigid designator iff e refers to the same object in every possible world in which e refers at all. It is <dfn>non-rigid</dfn> iff it refers to different objects in at least two possible worlds.</p></div></div>
+      <p>The argument:</p>
+      <ol>
+        <li>Ordinary proper names are rigid.</li>
+        <li>The descriptions a descriptivist could plausibly associate with them are non-rigid.</li>
+        <li>So “necessarily, X is the φ” is false, and (vi) is false.</li>
+      </ol>
+      <p>Why “plausibly”? Descriptions that pick out an object by its essential properties are rigid, like “the natural number between 2 and 4.” But we rarely know enough about essences to pick anything out that way.</p>
+
+      <h3>Responses: limiting the damage</h3>
+      <ol>
+        <li><strong>Wide scope.</strong> (7) might be false too, read as “the LGPoA, you got that guy? It’s necessary that he was a philosopher.” It has two readings, just like “the number of planets” in <a href="#phil-147-lec-11">Lec 11</a>:
+          <ul class="ex">
+            <li>It’s necessary that the LGPoA, whoever that may be, was a philosopher. <span class="gl">true</span></li>
+            <li>The LGPoA is such that it’s necessary that they were a philosopher. <span class="gl">false</span></li>
+          </ul>
+          The descriptivist says a name’s description <em>obligatorily</em> takes wide scope over modal operators, so (8) gets only the false reading. <strong>Kripke’s reply (Preface):</strong> the argument doesn’t need □ at all. The embedded sentences “The LGPoA was a philosopher” and “Aristotle was a philosopher” differ in truth value at some worlds, so they can’t mean the same thing.
+        </li>
+        <li><strong>Actualized descriptions.</strong> Adding “actually” (“the person who was <em>actually</em> the LGPoA”) makes the description rigid.</li>
+      </ol>
+      <p>Both responses concede that (vi) is false; they just limit the damage.</p>
+
+      <h3>Where does this leave Quine?</h3>
+      <p>Quine would say that talk of essences is just talk, and reflects a mistaken view of the world. Kripke’s point is that people can make sense of “that guy might have lost” (pointing at Nixon) without specifying which description they’re using. Someone who replies “only if you describe him as ‘Nixon,’ not as ‘the winner’” is the one with a philosophical theory. So there’s intuitive content to objects having modal properties, and the burden of proof shifts: Quine can’t treat his view as the default.</p>
+      <p><strong>Nickel</strong> thinks this undersells Quine and oversells Kripke.</p>
+      <ul>
+        <li><strong>Psychological essentialism</strong> <span class="src">(Gelman 2003)</span>: there’s a developmental stage where children think lots of things have essential properties (“why are mountains high? so they’re for climbing!”). We have a strong tendency to ascribe essences to things that clearly don’t have them; some adults ascribe essences to race. That doesn’t mean they’re right. Our intuitions can systematically misfire.</li>
+        <li>There’s no tabula rasa: like Goodman, we need to take some (but not all) things for granted. But an intuition is a <em>presumption</em>, not at all conclusive. We keep intuitions until they’re rejected.</li>
+      </ul>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-11"><small>Previous</small>Lec 11 · Quine: three grades</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
     </section>
   </main>
 </div>
