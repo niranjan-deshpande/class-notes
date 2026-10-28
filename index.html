@@ -51,7 +51,7 @@
     <header class="course-head">
       <p class="kicker">Phil 147</p>
       <h1>Philosophy of Language</h1>
-      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–12</p>
+      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–16</p>
       <p class="lede">My lecture notes, cleaned up and organized by lecture, filled in from the handouts where the notes were thin or abbreviated. Green boxes and tags mark material added from the handout.</p>
     </header>
 
@@ -176,6 +176,44 @@
         <div><dt>Rigid designator</dt><dd>An expression that refers to the same object in every possible world in which it refers at all.</dd></div>
         <div><dt>Non-rigid designator</dt><dd>An expression that refers to different objects in at least two possible worlds.</dd></div>
         <div><dt>Psychological essentialism</dt><dd>Our (especially children’s) strong tendency to ascribe essences to things, including things that don’t have them.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-13">Lec 13 · Kripke</a></h3>
+      <dl class="gloss">
+        <div><dt>Schmidt hypothesis</dt><dd>The scenario in which “Gödel” turns out to be an impostor who stole Schmidt’s incompleteness proof.</dd></div>
+        <div><dt>Millianism</dt><dd>The semantic value of a name is its bearer: a name contributes only its referent to what a sentence says.</dd></div>
+        <div><dt>Causal Theory of Names</dt><dd>A name X refers to whatever stands at the beginning of the causal chain of reference-preserving links leading to the use of X.</dd></div>
+        <div><dt>Semantic externalism</dt><dd>The facts in virtue of which a name refers include more than facts internal to the speaker.</dd></div>
+        <div><dt>Solipsism</dt><dd>The view that the person holding it is the only person in existence.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-14">Lec 14 · Kripke</a></h3>
+      <dl class="gloss">
+        <div><dt>Natural kind</dt><dd>A kind that corresponds to a real division in nature (“cuts nature at its joints”), as opposed to an arbitrary collection.</dd></div>
+        <div><dt>Necessity of identity</dt><dd>An identity between two rigid designators is necessarily true if true, necessarily false if false.</dd></div>
+        <div><dt>Necessary a posteriori</dt><dd>Necessarily true but knowable only empirically, e.g. “Hesperus is Phosphorus.”</dd></div>
+        <div><dt>Contingent a priori</dt><dd>Contingently true but knowable without empirical investigation, e.g. “I am here now.”</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-15">Lec 15 · Grice</a></h3>
+      <dl class="gloss">
+        <div><dt>Pragmatics</dt><dd>The study of the use of language, as distinct from literal meaning (semantics).</dd></div>
+        <div><dt>Speaker meaning</dt><dd>All the information the speaker intends to get across; a property of an utterance.</dd></div>
+        <div><dt>What is said</dt><dd>The proposition expressed by the sentence on an occasion, given the conventional meanings of its words.</dd></div>
+        <div><dt>Implication</dt><dd>Something that must be true if S is true: a presupposition or entailment of S. Semantic.</dd></div>
+        <div><dt>Implicature</dt><dd>Something conveyed by asserting S beyond what is said. Pragmatic.</dd></div>
+        <div><dt>Conversational implicature</dt><dd>An implicature that depends on the context and on reasoning about the Cooperative Principle (the letter of recommendation).</dd></div>
+        <div><dt>Conventional implicature</dt><dd>An implicature attached to particular words, like the contrast conveyed by “but.”</dd></div>
+        <div><dt>Cooperative Principle</dt><dd>Make your contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange.</dd></div>
+        <div><dt>Informativeness</dt><dd>S is at least as informative as S′ iff S entails S′; more informative iff also S′ doesn’t entail S.</dd></div>
+        <div><dt>Cancellation</dt><dd>An implicature p of S can be denied (“S. In fact, not p”) without contradiction; an entailment can’t.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-16">Lec 16 · Grice</a></h3>
+      <dl class="gloss">
+        <div><dt>Generalized implicature</dt><dd>A conversational implicature that arises across contexts, like or-not-and and some-not-all (vs. particularized, like the letter of recommendation).</dd></div>
+        <div><dt>Scalar implicature</dt><dd>An implicature derived by reasoning about more informative alternatives that can be ordered on a scale.</dd></div>
+        <div><dt>Unasserted context</dt><dd>A position in a sentence whose content the speaker isn’t committed to, e.g. under negation or in a conditional’s antecedent.</dd></div>
       </dl>
     </section>
 
@@ -796,7 +834,253 @@
         <li>There’s no tabula rasa: like Goodman, we need to take some (but not all) things for granted. But an intuition is a <em>presumption</em>, not at all conclusive. We keep intuitions until they’re rejected.</li>
       </ul>
 
-      <nav class="pager"><a class="prev" href="#phil-147-lec-11"><small>Previous</small>Lec 11 · Quine: three grades</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
+      <nav class="pager"><a class="prev" href="#phil-147-lec-11"><small>Previous</small>Lec 11 · Quine: three grades</a><a class="next" href="#phil-147-lec-13"><small>Next</small>Lec 13 · Kripke: naming &amp; necessity II</a></nav>
+    </section>
+
+    <!-- ============================ LEC 13 ============================ -->
+    <section class="lec" id="phil-147-lec-13" data-n="13" data-short="Kripke: naming &amp; necessity II">
+      <h2><span class="num">Lecture 13</span>Kripke: naming and necessity II</h2>
+      <p class="reading">Kripke, <i>Naming and Necessity</i> (1972), Lecture II</p>
+
+      <h3>Where did descriptivism go wrong?</h3>
+      <p>Across the three lectures, Kripke argues that theses (ii)–(vi) of the <a href="#phil-147-lec-12">Description Theory</a> are false: the modal argument targets (vi), the epistemic argument (v), and the semantic argument (ii)–(iv). Only the stipulation (i) is left. <span class="tag">Handout</span>Lecture I is ground-clearing: you can give up the distinctively modal commitment (vi) and keep the rest. The epistemic and especially the semantic argument carry the burden of attacking the heart of the theory.</p>
+      <p>So where did we go wrong in thinking that, to refer, we need something to say about the referent? It seems Kripke’s “picture” still needs something like the Description Theory.</p>
+
+      <h3>The epistemic argument</h3>
+      <p>If (v) were true, then just as (2) is knowable a priori by anyone who knows how language works, (3) should be too:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(2) If anyone was the last great philosopher of antiquity, the last great philosopher of antiquity was a philosopher.</li>
+        <li>(3) Aristotle, if he exists, was a philosopher.</li>
+      </ul>
+      <p>Kripke’s reply: we just don’t treat descriptions as a priori in this way. Lots of examples show that the information associated with a name is insufficient, and that targets the “a priori” premise.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Epistemic Argument</span><span class="tag">Handout</span></div><div class="th-b">
+        <ol style="list-style:none;padding-left:0">
+          <li>(1) For any φ that could fix the reference of X, a speaker who understands X can treat it as an empirical matter whether, if X exists, X is the φ.</li>
+          <li>∴ (2) “If X exists, then X is the φ” is not known a priori by the speaker. So (v) goes.</li>
+        </ol>
+      </div></div>
+
+      <h3>The semantic argument: Gödel and Schmidt</h3>
+      <p>The semantic argument is very similar to the epistemic one. <span class="tag">Handout</span>Its premise is that a speaker treats even the information she would naturally give in answer to “who are you talking about?” as an empirical hypothesis about the referent. The information can be <strong>insufficient</strong> (Feynman is “some physicist”), <strong>mistaken</strong> (Einstein as the inventor of the atomic bomb), or <strong>accurate but playing the wrong role</strong> (Gödel–Schmidt).</p>
+      <p>Many people believe (4): Gödel is the person who first proved the incompleteness of arithmetic. Now consider:</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Schmidt hypothesis</span><span class="tag">Handout</span></div><div class="th-b"><p>Future research shows that the celebrated mathematician who went by “Gödel” was an impostor. An otherwise unknown mathematician named Schmidt first proved incompleteness, but disappeared under mysterious circumstances shortly after meeting the man known as Gödel, who then passed off the proof as his own.</p></div></div>
+      <p>Suppose we learn this is accurate. Uncontroversially, the description “the person who first proved incompleteness” then refers to Schmidt. But we wouldn’t say we were wrong about who “Gödel” referred to; we’d say we were wrong about what Gödel did:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(5) It turned out that Gödel wasn’t the first to prove incompleteness.</li>
+        <li>(6) It turned out that the first person to prove incompleteness was someone other than we thought, namely Schmidt.</li>
+      </ul>
+      <p>If the Description Theory were right, we’d be just as inclined to revise what “Gödel” refers to as what the description refers to. We aren’t, so the theory is contradicted. <span class="tag">Handout</span>The argument comes in two forms:</p>
+      <ul>
+        <li><strong>(A)</strong> A speaker can refer to an object with a name even without identifying information about it, knowing she lacks it. So it’s not the case that the speaker believes some of the properties pick out a unique individual (against ii), and not the case that if the properties fail to pick out a unique object, the name doesn’t refer (against iv).</li>
+        <li><strong>(B)</strong> Even if it turns out that an unknown mathematician first proved incompleteness, “Gödel” still refers to the person who became famous. So it’s not the case that whoever uniquely satisfies most of the properties is the referent (against iii).</li>
+      </ul>
+
+      <h3>Modal vs. semantic arguments</h3>
+      <p>The modal argument takes for granted what our words refer to; the semantic argument doesn’t. <span class="tag">Handout</span>The modal argument holds fixed the facts about the actual world (who did what, when) and asks which of them could have been otherwise. The semantic argument asks how our views about the reference of our terms would change if we learned certain things about the world.</p>
+      <p>So the modal argument uses a <strong>counterfactual</strong> conditional, and the semantic argument an <strong>indicative</strong> one:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(7) If things had been different, Aristotle could have been something other than a philosopher. <span class="gl">modal</span></li>
+        <li>(8) If it turns out that an unknown mathematician first proved incompleteness, then “Gödel” still refers to the person who became famous. <span class="gl">semantic</span></li>
+      </ul>
+      <p><span class="tag">Handout</span>Rule of thumb: counterfactuals concern possibilities considered as <em>non-actual</em>; indicatives concern possibilities considered as <em>actual</em>.</p>
+      <p>(But both ask you to think about possibilities that you now take to be wrong, so in some sense both are modal, considering more than one world. They still attack different theses. The semantic argument says that even if in <em>this</em> world no description fits, the name still refers; the modal argument takes for granted that the name refers in this world and asks what happens elsewhere. I’m not satisfied by this: both seem to presume one world where the name refers successfully, then consider others.)</p>
+
+      <h3>Is the semantic argument solipsistic?</h3>
+      <p>Kripke argues from generalizations about one or two speakers. The argument is sort of <dfn>solipsistic</dfn>: the descriptions in the Gödel case could be given without anyone else existing. But many of the names we use live in social contexts. We’re willing to entertain that Aristotle didn’t write the <i>Nicomachean Ethics</i>; then “Aristotle” is “the person my teachers were referring to.” <span class="tag">Handout</span>Likewise “Gödel” could be “the person that the person I learned the name from was referring to.”</p>
+      <p>That isn’t circular, since there’s a chain that goes back, so it needn’t violate condition (C). The issue is that we often don’t still have identifying information about the chain: we forget the source, so we can’t use any specific information to single out the next step back. <span class="tag">Handout</span>Kripke: a speaker who heard about Feynman in the marketplace may refer to Feynman “even though he can’t remember from whom he first heard of Feynman.”</p>
+
+      <h3>Kripke’s alternative: Millianism and the causal theory</h3>
+      <p>Kripke’s alternative to Frege and Russell combines two views.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Millianism</span></div><div class="th-b"><p>The semantic value of a name is its bearer. That is, all a name contributes to what a sentence says (its truth conditions, the proposition expressed) is the object it names, with no sense or descriptive content in between. The name works like a tag. So “Hesperus is a planet” and “Phosphorus is a planet” say the same thing. (After J. S. Mill, for whom names have denotation but no connotation.)</p></div></div>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Causal Theory of Names</span></div><div class="th-b"><p>A name X refers to the object or person at the beginning of the causal chain of <dfn>reference-preserving links</dfn> that leads to the use of X.</p></div></div>
+      <p>The picture: a name is introduced in an initial “baptism,” by pointing at the object or by fixing its reference with a description. It is then passed from speaker to speaker, each using it intending to refer to whatever the person they got it from referred to. A speaker at the far end refers to the object at the start, however little they know about it.</p>
+      <p>Importantly, I don’t need to <em>know</em> this chain. It just matters that there <em>is</em> one. That’s semantic externalism.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Semantic Externalism</span><span class="tag">Handout</span></div><div class="th-b"><p>The facts in virtue of which a name X refers to its referent include more than facts internal to the speaker using X. (The other key text is Putnam 1975.)</p></div></div>
+      <div class="thm note"><div class="th-m"><span class="tag">Handout</span></div><div class="th-b"><p>Kripke and Frege agree that a name’s reference, what it contributes to truth conditions, is just the object named. They differ on what settles it: for Frege, something <em>inside</em> the speaker (her grasp of sense); for Kripke, something <em>outside</em> (how she is embedded in her environment, especially the causal history of her use of the name). Kripke calls this a “picture,” not a theory, joking that all philosophical theories are false. It leaves a hugely important notion unanalyzed: the reference-preserving link.</p></div></div>
+
+      <h3>What is a reference-preserving link?</h3>
+      <ul>
+        <li><strong>Diana.</strong> A thinks Diana (Taurasi) is the best basketball player. Prompted by A saying this, B says Diana (Princess of Wales) is indeed the best at everything. B is now talking about someone else, but there’s still a causal connection.</li>
+        <li><strong>Madagascar.</strong> <span class="tag">Handout</span>The name “Madagascar” derives, via Marco Polo’s misrendering, from “Mogadishu” (a port on the African mainland), but it refers to the island, even though there’s a causal connection. The example is cool because everyone could be <em>trying</em> to refer to the same place as the person before them and still fail. So trying to preserve reference isn’t sufficient either.</li>
+      </ul>
+      <p>So a causal connection is not sufficient for a reference-preserving link.</p>
+      <div class="thm note"><div class="th-m"><span class="tag">Handout</span></div><div class="th-b">
+        <p><b>Aristotle, the pet aardvark.</b> Suppose Kripke has a pet aardvark he calls “Aristotle,” after the philosopher. Asked which Aristotle he meant on some occasion, he might say “the philosopher, not the aardvark.” What role does that answer play on his approach?</p>
+        <p>Maybe you can cite intentions determined by descriptive information: on every occasion I use the name, I need descriptive information. What else makes it the case that I refer to Aristotle the philosopher, not the shipping magnate? The examples above show it can’t just be a causal connection. But it also seems Kripke can’t use descriptive information, because of the semantic argument.</p>
+        <p><b>Change of reference.</b> Can Kripke’s picture be adapted to handle reference change like “Madagascar”? If so, how?</p>
+      </div></div>
+      <p>Further questions:</p>
+      <ul>
+        <li>What does it actually mean for something to be the <em>same</em> across possible worlds? It feels weird to use that in the definition of rigid designation, since rigid designation is supposed to help us figure out what is the same.</li>
+        <li>What is needed for communication to be successful?</li>
+        <li>What happens when you forget where you learned a name? That should be fine, since we can be externalists.</li>
+        <li>So what does Kripke do? He needs <em>some</em> way to explain reference.</li>
+      </ul>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-12"><small>Previous</small>Lec 12 · Kripke: naming &amp; necessity I</a><a class="next" href="#phil-147-lec-14"><small>Next</small>Lec 14 · Kripke: naming &amp; necessity III</a></nav>
+    </section>
+
+    <!-- ============================ LEC 14 ============================ -->
+    <section class="lec" id="phil-147-lec-14" data-n="14" data-short="Kripke: naming &amp; necessity III">
+      <h2><span class="num">Lecture 14</span>Kripke: naming and necessity III</h2>
+      <p class="reading">Kripke, <i>Naming and Necessity</i> (1972), Lecture III</p>
+
+      <h3>Recap</h3>
+      <p>Recall that we want to explain systematicity, rational intelligibility, and “aboutness.” One of the important things in Kripke is that he dissociates metaphysics from epistemology: there can be necessary truths known a posteriori, and contingent truths known a priori.</p>
+
+      <h3>Kind terms as names</h3>
+      <p>Kripke extends his arguments to kinds: kind terms are proper names. The notion of a natural kind comes from the intuition that some ways of dividing things up are better than others. We think of some distinctions, groups, or arrangements as coming from nature: the periodic table seems like an insight, not an arbitrary arrangement. <span class="tag">Handout</span>Natural kinds “cut nature at its joints,” as opposed to arbitrary collections. Plato: “to cut up each kind according to its species along its natural joints, and to try not to splinter any part, as a bad butcher might do.”</p>
+      <p>But it’s weird to suggest that “gold” or “raven” are proper names! Kripke assumes a kind term refers to an abstract entity that exists over and above all the ravens or all the gold. Sentences like these seem to ascribe to the kind properties that can’t apply to individuals:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(1) Ravens are widespread.</li>
+        <li>(2) Dodos are extinct.</li>
+      </ul>
+      <p>This is indeed a debate; some people doubt that kinds exist. <span class="tag">Handout</span>Does talk of kinds make sense? Basically never <span class="src">(Carnap 1956)</span>; not in biology <span class="src">(Sober 1994)</span>; for socially constructed categories, see <span class="src">Mallon (2016)</span>.</p>
+
+      <h3>The semantic argument for kind terms</h3>
+      <p>Then the semantic argument comes for free, just like the Gödel–Schmidt example. <span class="tag">Handout</span>Suppose the reference of “gold” were fixed as “the shiny yellow metal.” If we learned that the stuff we’d thought was gold was in fact blue, we would have to conclude that there’s no gold. Instead, we’d say gold turned out to be blue. So “gold is a shiny yellow metal” is an empirical hypothesis about gold, not reference-fixing, and the reference of “gold” is fixed through a causal chain of reference-preserving links.</p>
+
+      <h3>Talking across theories</h3>
+      <p>Descriptivism has intuitive appeal in the natural sciences: you learn what “electron” means by learning its role in a theory. But it means that people with different theories just can’t talk to each other. Suppose the meaning of “planet” is fixed by Aristotle’s (false) description:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(5) an object that moves on a certain sublunar sphere <span class="gl">Aristotle</span></li>
+        <li>(6) an astronomical body orbiting a star or stellar remnant that isn’t itself engaged in nuclear fusion <span class="gl">contemporary astronomer</span></li>
+      </ul>
+      <p>Then Aristotle isn’t saying anything true or false, since there are no sublunar spheres, so he and the astronomer can’t communicate. Before and after we change our theory about something, the reference changes, which makes it hard to see how we can learn from the past.</p>
+      <p>Kripke solves this with the reference-preserving link: both speakers are connected to the same phenomenon, so they are joining issue with each other. He is an <strong>externalist</strong>: you can be wrong about your own reference. It seems you <em>need</em> to be an externalist to say “we were wrong, but we were talking about something real.”</p>
+      <ul>
+        <li><strong>Kuhn.</strong> <span class="tag">Handout</span>This answers Kuhn, for whom theories in different paradigms are incommensurable, so you can’t ask which is better supported by the evidence.</li>
+        <li><strong>Race.</strong> The same question of applying the theory arises for race, a debate that started from Kripke. <span class="tag">Handout</span>Skeptics <span class="src">(Appiah 1985)</span> deny that racial terms refer to anything, because the explanatory project in which they were introduced is bankrupt. What does a use of a term have to be like so that its embedding theory makes it impossible to connect to an actual phenomenon?</li>
+      </ul>
+
+      <h3>Identity statements are necessary</h3>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Necessity of identity</span></div><div class="th-b"><p>If a sentence has the form [rigid designator] = [rigid designator], it is necessarily true if true, and necessarily false if false.</p></div></div>
+      <p>This just follows from transitivity: both sides refer to the same thing across possible worlds.</p>
+      <details class="more"><summary>The formal argument (handout)</summary>
+        <p>Write ⟦e⟧<sub>w</sub> for the denotation of e at world w. Assume (8) “Hesperus is Phosphorus” is true at the actual world @, and let w be any world.</p>
+        <ol style="list-style:none;padding-left:0">
+          <li>(9) ⟦Hesperus⟧<sub>@</sub> = ⟦Hesperus⟧<sub>w</sub>, since “Hesperus” is rigid.</li>
+          <li>(10) ⟦Phosphorus⟧<sub>@</sub> = ⟦Phosphorus⟧<sub>w</sub>, likewise.</li>
+          <li>(11) ⟦Hesperus⟧<sub>@</sub> = ⟦Phosphorus⟧<sub>@</sub>, since (8) is true.</li>
+          <li>(12) By transitivity, ⟦Hesperus⟧<sub>w</sub> = ⟦Hesperus⟧<sub>@</sub> = ⟦Phosphorus⟧<sub>@</sub> = ⟦Phosphorus⟧<sub>w</sub>.</li>
+        </ol>
+        <p>Since w was arbitrary, (8) is true at every world. Exercise: the corresponding argument for “The person teaching this class is the oldest person in the class” breaks down at (9)–(10), because descriptions aren’t rigid.</p>
+      </details>
+      <p>This means “a priori” and “necessary” come apart:</p>
+      <ul>
+        <li><strong>Necessary a posteriori:</strong> a true identity between rigid designators is necessary, but can be discovered only empirically: “Hesperus is Phosphorus.”</li>
+        <li><strong>Contingent a priori:</strong> “I am here now” (<a href="#phil-147-lec-9">Kaplan</a>). <span class="tag">Handout</span>Kripke adds “The standard meter is one meter long.” Any combination of necessary/contingent and a priori/a posteriori is possible.</li>
+      </ul>
+
+      <h3>First strangeness: Millianism</h3>
+      <p>Kripke is a Millian, so a sentence’s proposition contains just the referents of its names. Then run the argument from the handout:</p>
+      <ol style="list-style:none;padding-left:0">
+        <li>(i) “Hesperus is Hesperus” and “Hesperus is Phosphorus” express the same proposition (Millianism).</li>
+        <li>(ii) The proposition expressed by “Hesperus is Phosphorus” is knowable only a posteriori.</li>
+        <li>(iii) The proposition expressed by “Hesperus is Hesperus” is knowable a priori.</li>
+        <li>∴ (iv) They are distinct propositions, since one is knowable a priori and the other isn’t.</li>
+      </ol>
+      <p>(iv) contradicts (i).</p>
+
+      <h3>Second strangeness: what is evidence for?</h3>
+      <p>We care about possible worlds because we’re rational agents: we want to know which world we’re in so we can choose the correct strategy, since differences between worlds matter to whether our plans succeed. Evidence lets us locate ourselves in the space of worlds. <span class="tag">Handout</span>A trivial division, with all worlds on one side, needs no evidence. That’s why “Hesperus is Hesperus” is a priori, and on this picture all and only the necessary truths should be a priori.</p>
+      <p>But if there are necessary a posteriori truths, then all the worlds are of one sort, so why would we look for evidence for one side or the other? What does “a = b” mean? If it’s true, it’s necessarily true, so it’s true in all worlds, and we can’t be trying to learn about our world. When ancient astronomers asked whether Hesperus is Phosphorus, they seem to have been figuring out which sort of world they were in. That can’t be right, because there are no worlds where Hesperus isn’t Phosphorus! The necessary a posteriori clashes with our picture of what evidence is for.</p>
+
+      <h3>Language and mind</h3>
+      <p><span class="tag">Handout</span>Early in the course, propositions played a dual role: the meanings of sentences and the contents of thoughts. Kaplan separated these, using propositions only as the contents of sentences: “I am a professor” and “Bernhard is a professor,” said by Bernhard, express the same proposition. That fits two separate explanatory projects:</p>
+      <ul>
+        <li><strong>Philosophy of mind:</strong> explain behavior as reasonable given the agent’s beliefs, desires, and other mental states, with propositions as their contents.</li>
+        <li><strong>Philosophy of language:</strong> explain how the meaning of a complex expression is determined by the meanings of its parts, with propositions as the meanings of sentences.</li>
+      </ul>
+      <p>Sometimes a theoretical term really is introduced in different projects: “concept” in psychology (typicality effects) isn’t “concept” in philosophy (compositionality). But that isn’t the right diagnosis of propositions and Frege and Russell’s two projects from the beginning of the course. The projects can’t be taken apart; they are one and the same.</p>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-13"><small>Previous</small>Lec 13 · Kripke: naming &amp; necessity II</a><a class="next" href="#phil-147-lec-15"><small>Next</small>Lec 15 · Grice: logic &amp; conversation I</a></nav>
+    </section>
+
+    <!-- ============================ LEC 15 ============================ -->
+    <section class="lec" id="phil-147-lec-15" data-n="15" data-short="Grice: logic &amp; conversation I">
+      <h2><span class="num">Lecture 15</span>Grice: logic and conversation I</h2>
+      <p class="reading">Grice, <i>“Logic and Conversation”</i> (1975)</p>
+
+      <h3>From semantics to pragmatics</h3>
+      <p>We move from <dfn>semantics</dfn>, the study of meaning, to <dfn>pragmatics</dfn>, the study of the <em>use</em> of a language, as distinct from its literal meaning.</p>
+      <p>Recall <a href="#phil-147-lec-8">Donnellan’s</a> attributive and referential uses: “Smith’s murderer, whoever it may be, is insane” vs. “Smith’s murderer, <em>that person</em>, is insane.” Strawson says language has rules but we can bend, break, and manipulate them, and he thinks that’s a problem for Russell and Frege. Grice says: yes, we can be creative, but there are <em>rules</em> for doing so.</p>
+
+      <h3>Logic and ordinary language</h3>
+      <p>Grice is interested in divergences between logical analysis and real use. For example, counterfactual and indicative conditionals diverge, so neither can be done with truth tables. And in logic “or” means at least one, while in English it usually means not both.</p>
+      <p>Grice wants to stay neutral between the <strong>formalists</strong> (Frege), for whom natural language is an imperfect tool and an ideal language would be better, and the <strong>informalists</strong>, for whom logic isn’t a good tool for understanding language. He thinks the debate presupposes a divergence, which he denies. So: stop having the debate!</p>
+
+      <h3>Saying and meaning</h3>
+      <p>Grice’s basic idea is the <strong>strategic</strong> use of language:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(1) A: “I love you.” B: “I love cake.”</li>
+        <li>(2) A professor’s letter of recommendation for a philosophy job: “Mr. X’s command of English is excellent, and his attendance at tutorials has been regular.”</li>
+      </ul>
+      <p>Clearly more is meant than what is said. In (1), B isn’t trying to get A to infer that the love is unrequited; in (2), the writer intends the reader to infer that X is no good at philosophy. The speaker invites the audience to reason about the speaker’s mental states to explain why they would say such a thing.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Speaker meaning</span></div><div class="th-b"><p>All the information the speaker intends to get across. It is a property of an <em>utterance</em>.</p></div></div>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">What is said</span></div><div class="th-b"><p>The proposition expressed by the sentence used on an occasion, i.e. by the conventional meaning of the words.</p></div></div>
+
+      <h3>Implications and implicatures</h3>
+      <p>Some implicatures, like the letter of recommendation, depend strongly on the context: these are <dfn>conversational implicatures</dfn>. Others, <dfn>conventional implicatures</dfn>, are weird and matter less for us. “She is poor but honest” and “she is poor and honest” seem to imply very different things. But if I disagree with the contrast, I can’t say “that’s false,” since that commits me to her being not poor or not honest.</p>
+      <p>You can think of it like this:</p>
+      <ul>
+        <li><strong>Speaker meaning</strong> of an assertion of S
+          <ul>
+            <li><strong>What is said</strong> by S, which determines the <dfn>implications</dfn> of S: things that must be true if S is true.
+              <ul><li>presuppositions of S</li><li>entailments of S</li></ul></li>
+            <li><dfn>Implicatures</dfn> of the assertion of S
+              <ul><li>conversational implicatures</li><li>conventional implicatures</li></ul></li>
+          </ul>
+        </li>
+      </ul>
+      <p>Sometimes a speaker wants to commit to the implicatures but not the implications. Implications are semantic; implicatures are pragmatic. <strong>Nickel</strong> thinks a strong case for Grice is “or” conveying “not and.”</p>
+
+      <h3>The Cooperative Principle</h3>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Cooperative Principle</span></div><div class="th-b"><p>Make your conversational contribution such as is required, at the stage at which it occurs, by the accepted purpose or direction of the talk exchange in which you are engaged.</p></div></div>
+      <p>From this Grice “derives” his <dfn>maxims of conversation</dfn>: roughly, be as informative as required and no more (Quantity), say what you believe true and have evidence for (Quality), be relevant (Relation), and be perspicuous (Manner).</p>
+      <p>Suppose someone says “Mary had a cocktail or dessert.” I’m curious, and the speaker knows; so why didn’t they say more? I reason strategically. If the speaker wanted to be cooperative and knew Mary had both, they’d have said so. The speaker is well informed. So I conclude that she didn’t have both. All of this follows from believing the speaker is trying to follow the maxims.</p>
+      <p>In the letter of recommendation, though, the speaker <em>is</em> violating a maxim by being irrelevant. So you ask why they would do that, given the Cooperative Principle, and conclude they’re following a norm of not being blunt. The maxims can pull in different directions.</p>
+      <p>More formally, where ⇒ is semantic entailment:</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Informativeness</span></div><div class="th-b"><p>S is <dfn>at least as informative as</dfn> S′ iff S ⇒ S′. S is <dfn>more informative than</dfn> S′ iff S ⇒ S′ and S′ ⇏ S.</p></div></div>
+      <p>Note this means you can’t compare sentences about different things. Using these notions we can formalize the reasoning above: “Mary had a cocktail and dessert” is more informative than “…or….” When doing the analysis, we also care about what the speaker is after.</p>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Cancellation</span></div><div class="th-b"><p>If p is an implicature of S, you can coherently say “S. In fact, not p” without contradiction (“Mary had a cocktail or dessert. In fact, she had both.”). This doesn’t work for entailments.</p></div></div>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-14"><small>Previous</small>Lec 14 · Kripke: naming &amp; necessity III</a><a class="next" href="#phil-147-lec-16"><small>Next</small>Lec 16 · Grice: logic &amp; conversation II</a></nav>
+    </section>
+
+    <!-- ============================ LEC 16 ============================ -->
+    <section class="lec" id="phil-147-lec-16" data-n="16" data-short="Grice: logic &amp; conversation II">
+      <h2><span class="num">Lecture 16</span>Grice: logic and conversation II</h2>
+      <p class="reading">Grice, <i>“Logic and Conversation”</i> (1975)</p>
+
+      <h3>“Some” suggests “not all”</h3>
+      <p>We get the same kind of effect for some/all as for or/and, which makes sense, since they are basically the same. If you say “some students failed the exam,” I infer that not all students failed.</p>
+      <p><span class="tag">Handout</span>The reasoning goes as for “or.” “All students failed” is more informative than “some students failed.” The professor didn’t say it, and not because it’s longer; it would have better addressed the students’ desire to know how the exam went. So the professor doesn’t believe it, and since the professor knows how the exam went, it’s false. The implicature cancels: “Some students failed the exam. In fact, all students failed” is totally fine.</p>
+
+      <h3>Universal quantification and vacuous truth</h3>
+      <p>But in logic, the universal doesn’t entail the existential:</p>
+      <ul>
+        <li><span class="logic">∀x(Jx → Sx)</span> (“every jabberwocky is smart”) is true if there are no jabberwockies.</li>
+        <li><span class="logic">∃x(Jx ∧ Sx)</span> (“some jabberwocky is smart”) is false if there are none. Oops!</li>
+      </ul>
+      <p>So there’s a difference between natural language and logic, and Grice faces a dilemma:</p>
+      <ol>
+        <li>accept that “some” means ∃, “at least one”; then he needs to say “all” ≠ ∀;</li>
+        <li>accept that “all” means ∀, “for all”; then he needs “some” ≠ ∃.</li>
+      </ol>
+      <p>Try asserting “All Fs are G. In fact, there are no Fs.” Oops! <span class="tag">Handout</span>“All MIT students in this class have aced every paper. In fact, there are no MIT students in this class.” If “there are some Fs” were only an implicature of “all Fs are G,” it should cancel, as with “some.” Remember that his thesis was that there are no divergences between the logical operators and natural language.</p>
+      <div class="thm note"><div class="th-m"><span class="tag">Handout</span></div><div class="th-b"><p>What gets tested against speakers’ judgments is always a <em>package</em> of semantics plus pragmatics. Here the package was two semantic hypotheses (about “some” and “all”) and a pragmatic account of how “some” conveys “not all.” When something goes wrong, we need further evidence, like the contrast between the two “in fact” sentences, to figure out which part to blame.</p>
+        <p>The or-not-and and some-not-all implicatures are <dfn>generalized</dfn> conversational implicatures, unlike <dfn>particularized</dfn> ones such as the letter of recommendation. They are also <dfn>scalar implicatures</dfn>: they rely on reasoning about alternatives ordered from more to less informative, which can be arranged on a scale.</p></div></div>
+      <p>Why do we try to fit natural language onto first-order logic at all? One reason: we really understand how proofs work in first-order logic.</p>
+
+      <h3>Implicatures in complex sentences</h3>
+      <div class="thm note"><div class="th-m"><span class="tag">Handout</span></div><div class="th-b">
+        <p><b>Unasserted contexts.</b> Negation creates an unasserted context: “It is not the case that it is raining” doesn’t commit you to “it is raining.” Conjunction creates an asserted one. The antecedent of a conditional is unasserted. Since for Grice an implicature arises from <em>asserting</em> something, it shouldn’t arise there, and it doesn’t: “If Mary had a cocktail or dessert, she’ll have enjoyed her dinner extra much” doesn’t mean “…a cocktail or dessert but not both….” Good for Grice.</p>
+        <p><b>The material conditional strikes again.</b> “If Nickel has two heads, he has three heads” is true as a material conditional. The Gricean says: if you know the antecedent is false, just assert its negation. But then asserting “If Mary and Jane are both home, you won’t be locked out” should implicate that the less informative “If Mary or Jane are home, you won’t be locked out” is false. As a material conditional, that comes to “Mary or Jane are home, and you’ll be locked out,” which is definitely not conveyed.</p>
+        <p><b>“And” and the order of events.</b> “The king died and a republic was declared” conveys a different order than “A republic was declared and the king died.” If the order were only an implicature, “If the king died and a republic was declared, Mary is happy” and “If a republic was declared and the king died, Mary is unhappy” couldn’t both be true, but they can. A third option <span class="src">(Partee)</span>: the past tense talks about a contextually restricted time frame, and the second conjunct’s time frame is set to follow the first’s.</p>
+      </div></div>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-15"><small>Previous</small>Lec 15 · Grice: logic &amp; conversation I</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
     </section>
   </main>
 </div>
@@ -829,7 +1113,7 @@
     <header class="course-head">
       <p class="kicker">Math 131</p>
       <h1>Topology</h1>
-      <p class="byline">Fall 2026 · Lectures 1–10 · Munkres §12–27</p>
+      <p class="byline">Fall 2026 · Munkres §12–27, 51–53</p>
     </header>
 
     <!-- ============================ 1 ============================ -->
@@ -872,6 +1156,7 @@
         <li>The singletons $\{x\}$ form a basis for the discrete topology.</li>
         <li>Any topology is a basis for itself.</li>
         <li>The open intervals $(a,b)$ form a basis for the standard topology on $\mathbb R$.</li>
+        <li>To show a set is open, just construct a basis element around each of its points.</li>
       </ul></div></div>
       
       <h3>Comparing topologies; two more topologies on ℝ</h3>
@@ -1165,6 +1450,7 @@
         <p><b class="th-n">$\mathbb R^n$ is path connected.</b> $\mathbb R^n$ is path connected (hence connected).</p></div></div>
       <div class="thm exs"><div class="th-m"><span class="th-k">Examples</span></div><div class="th-b"><ul>
         <li><strong>Topologist’s sine curve</strong> (connected but not path connected). Let $\Gamma = \{(x, \sin(1/x)) : x \gt 0\}$ and $X = \bar\Gamma = \Gamma \cup (\{0\} \times [-1,1]) \subset \mathbb R^2$. $X$ is connected, since $\Gamma$ is connected and taking the closure keeps it connected. $X$ is <em>not</em> path connected: you can’t connect a point on the limit segment to anything else.</li>
+        <li>$\mathbb R_K$ is also <a href="#math-131-p-rk">connected but not path connected</a>.</li>
       </ul></div></div>
 
       <h3>Local connectedness</h3>
@@ -1211,11 +1497,68 @@
       <div class="thm res" id="math-131-r-265"><div class="th-m"><span class="th-k">Theorems 26.5, 26.6</span><a class="th-pf" href="#math-131-p-265">proof ↓</a></div><div class="th-b">
         <p>Suppose $f : X \to Y$ is continuous and $X$ is compact.</p>
         <ol><li>The image $f(X)$ is compact.</li><li>If also $f$ is injective and $Y$ is Hausdorff, then $f$ is an embedding.</li></ol></div></div>
+      <div class="thm res" id="math-131-r-coarser"><div class="th-m"><span class="th-k">Fact</span><a class="th-pf" href="#math-131-p-coarser">proof ↓</a></div><div class="th-b"><p><b class="th-n">Changing the topology.</b> Passing to a coarser topology preserves compactness and connectedness. Passing to a finer topology preserves Hausdorffness.</p></div></div>
       <div class="thm res" id="math-131-r-277"><div class="th-m"><span class="th-k">Theorem 27.7</span><span class="tag src">WS 10</span><a class="th-pf" href="#math-131-p-277">proof ↓</a></div><div class="th-b"><p><b class="th-n">Perfect compact spaces are uncountable.</b> If $X$ is a nonempty compact Hausdorff space with no isolated points, then $X$ is uncountable.</p></div></div>
       <div class="thm res" id="math-131-r-brouwer"><div class="th-m"><span class="th-k">Theorem</span></div><div class="th-b">
         <p><b class="th-n">Brouwer, 1910.</b> If $X$ is a nonempty, compact, totally disconnected metric space with no isolated points, then $X$ is homeomorphic to $\mathcal C$, the standard middle-thirds Cantor set in $[0,1] \subset \mathbb R$. Recall that $\mathcal C \cong \{0,1\}^{\mathbb N}$.</p>
         <p>Unpacking the hypotheses: “no isolated points” means no singletons are open, and “totally disconnected” means the connected components are singletons. Its proof won’t be tested.</p></div></div>
-      <nav class="pager"><a class="prev" href="#math-131-t8"><small>Previous</small>8 · Connectedness</a><a class="next" href="#math-131-proofs"><small>Next</small>Proofs</a></nav>
+      <nav class="pager"><a class="prev" href="#math-131-t8"><small>Previous</small>8 · Connectedness</a><a class="next" href="#math-131-t10"><small>Next</small>10 · Fundamental group &amp; covering spaces</a></nav>
+    </section>
+
+    <!-- ============================ 10 ============================ -->
+    <section class="topic" id="math-131-t10" data-n="10" data-short="Fundamental group &amp; covering spaces">
+      <h2><span class="num">Topic 10</span>The fundamental group and covering spaces</h2>
+      <p class="reading">Munkres §51–53</p>
+
+      <h3>Homotopy of paths</h3>
+      <p>Recall that a <a href="#math-131-d-pc">path</a> in a space $X$ is a continuous $\gamma : [0,1] \to X$. Write $I = [0,1]$. Now we want to compare paths.</p>
+      <div class="thm def" id="math-131-d-htpy"><div class="th-m"><span class="th-k th-term">Path homotopy</span></div><div class="th-b">
+        <p>Let $\gamma, \gamma'$ be paths in $X$ with the same start point $x_0$ and end point $x_1$. A <dfn>(path) homotopy</dfn> from $\gamma$ to $\gamma'$ is a continuous $F : I \times I \to X$ such that</p>
+        <p>$$F(t,0) = \gamma(t), \quad F(t,1) = \gamma'(t), \quad F(0,s) = x_0, \quad F(1,s) = x_1 \quad \text{for all } s, t \in I.$$</p>
+        <p>If one exists, $\gamma$ and $\gamma'$ are <dfn>homotopic</dfn>, written $\gamma \simeq \gamma'$. Fixing the second parameter at $s = 0$ gives $\gamma$, and at $s = 1$ gives $\gamma'$. In between, $\gamma_s(t) = F(t,s)$ is a family of paths from $x_0$ to $x_1$ that varies continuously.</p></div></div>
+      <div class="thm res" id="math-131-r-511"><div class="th-m"><span class="th-k">Lemma 51.1</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-511">proof ↓</a></div><div class="th-b"><p><b class="th-n">Homotopy is an equivalence relation.</b> $\simeq$ is an equivalence relation on paths from $x_0$ to $x_1$. Write $[\gamma]$ for the class of $\gamma$.</p></div></div>
+      <div class="thm res" id="math-131-r-sline"><div class="th-m"><span class="th-k">Proposition</span><a class="th-pf" href="#math-131-p-sline">proof ↓</a></div><div class="th-b"><p><b class="th-n">Straight-line homotopy.</b> Fix $x_0, x_1 \in \mathbb R^2$. Any two paths $\gamma, \gamma'$ from $x_0$ to $x_1$ are homotopic, via $F(t,s) = (1-s)\,\gamma(t) + s\,\gamma'(t)$.</p></div></div>
+      <div class="thm exs"><div class="th-m"><span class="th-k">Examples</span></div><div class="th-b"><ul>
+        <li>The straight-line homotopy reflects that $\mathbb R^2$ is <a href="#math-131-d-sc">simply connected</a>: it has no holes.</li>
+        <li><strong>Non-example</strong> (proved next week). In $X = \mathbb R^2 - \{(0,0)\}$ with $x_0 = (1,0)$, the loop $\gamma(t) = (\cos 2\pi t, \sin 2\pi t)$ and the constant path $\gamma'(t) = x_0$ are <em>not</em> homotopic. Intuitively, you can’t deform $\gamma$ through the hole at the origin. This is what the fundamental group is set up to detect.</li>
+      </ul></div></div>
+
+      <h3>The fundamental group</h3>
+      <div class="thm def" id="math-131-d-loop"><div class="th-m"><span class="th-k th-term">Loop</span></div><div class="th-b"><p>Fix $x_0 \in X$. A <dfn>loop</dfn> based at $x_0$ is a path in $X$ from $x_0$ to $x_0$.</p></div></div>
+      <div class="thm def" id="math-131-d-pi1"><div class="th-m"><span class="th-k th-term">Fundamental group</span></div><div class="th-b">
+        <p>As a set, the <dfn>fundamental group</dfn> of $X$ based at $x_0$ is</p>
+        <p>$$\pi_1(X, x_0) = \{\text{homotopy classes of loops based at } x_0\}.$$</p>
+        <p>The group operation is <dfn>concatenation</dfn>, $[\gamma_1] * [\gamma_2] = [\gamma_1 * \gamma_2]$: first do $\gamma_1$, then $\gamma_2$, each at double speed. That is, $(\gamma_1 * \gamma_2)(t) = \gamma_1(2t)$ for $t \le \tfrac12$ and $\gamma_2(2t - 1)$ for $t \ge \tfrac12$.</p>
+        <ul><li>The identity is $e = [e_{x_0}]$, the class of the constant path at $x_0$.</li>
+        <li>The inverse is $[\gamma]^{-1} = [\bar\gamma]$, where $\bar\gamma(t) = \gamma(1-t)$ runs the loop backwards.</li></ul>
+        <p>The base point matters: if $X$ has different path components (say one with a hole and one without), the groups based in each will be different.</p></div></div>
+      <div class="thm res" id="math-131-r-512"><div class="th-m"><span class="th-k">Theorem 51.2</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-512">proof ↓</a></div><div class="th-b"><p><b class="th-n">$\pi_1$ is a group.</b> $*$ is well defined on homotopy classes, and it is associative, with identity $[e_{x_0}]$ and inverses $[\bar\gamma]$. So $\pi_1(X, x_0)$ is a group.</p></div></div>
+      <div class="thm def" id="math-131-d-sc"><div class="th-m"><span class="th-k th-term">Simply connected</span></div><div class="th-b"><p>$X$ is <dfn>simply connected</dfn> if it is path connected and $\pi_1(X, x_0) \cong 0$, the trivial group.</p></div></div>
+      <div class="thm res" id="math-131-r-522"><div class="th-m"><span class="th-k">Corollary 52.2</span><a class="th-pf" href="#math-131-p-522">proof ↓</a></div><div class="th-b"><p><b class="th-n">Change of base point.</b> If $X$ is path connected and $x_0, x_1 \in X$, then $\pi_1(X, x_0) \cong \pi_1(X, x_1)$. If $\alpha$ is a path from $x_0$ to $x_1$, an isomorphism is $\hat\alpha([\gamma]) = [\bar\alpha * \gamma * \alpha]$.</p></div></div>
+      <div class="thm res" id="math-131-r-fstar"><div class="th-m"><span class="th-k">Fact</span><a class="th-pf" href="#math-131-p-fstar">proof ↓</a></div><div class="th-b"><p><b class="th-n">Induced homomorphism.</b> If $f : X \to Y$ is continuous and $f(x_0) = y_0$, then $f_* : \pi_1(X, x_0) \to \pi_1(Y, y_0)$, $f_*([\gamma]) = [f \circ \gamma]$, is a homomorphism.</p></div></div>
+      <div class="thm exs"><div class="th-m"><span class="th-k">Examples</span></div><div class="th-b"><ul>
+        <li>$\pi_1(\mathbb R^2, (0,0)) = \{e\} = 0$, the trivial group (straight-line homotopy).</li>
+        <li>$\pi_1(\mathbb R^2 - \{0\}, (1,0)) \cong \mathbb Z \cong \pi_1(S^1, (1,0))$ (proved next week).</li>
+        <li>Torus: $\pi_1(S^1 \times S^1, x_0) \cong \mathbb Z \oplus \mathbb Z$.</li>
+        <li>Figure eight (two circles joined at $x_0$): $\pi_1 \cong \mathbb Z * \mathbb Z$, the free product.</li>
+      </ul></div></div>
+
+      <h3>Covering spaces</h3>
+      <div class="thm def" id="math-131-d-cover-map"><div class="th-m"><span class="th-k th-term">Covering map</span></div><div class="th-b">
+        <p>Let $p : E \to B$ be continuous and surjective. An open set $U \subset B$ is <dfn>evenly covered</dfn> by $p$ if $p^{-1}(U)$ is a disjoint union of open sets $V_\alpha \subset E$ ($\alpha \in A$, an index set) such that $p|_{V_\alpha} : V_\alpha \to U$ is a homeomorphism for each $\alpha$. That is, the “downstairs” open set has copies “upstairs.”</p>
+        <p>$p$ is a <dfn>covering map</dfn> if every $b \in B$ has a neighborhood $U$ that is evenly covered. Then $E$ is a <dfn>covering space</dfn> of $B$, and $B$ is the base space.</p></div></div>
+      <div class="thm def" id="math-131-d-sheets"><div class="th-m"><span class="th-k th-term">Degree, sheets</span></div><div class="th-b"><p>A covering $p : E \to B$ has <dfn>degree $n$</dfn>, or is <dfn>$n$-sheeted</dfn>, if $\#p^{-1}(b) = n$ for all $b \in B$.</p></div></div>
+      <div class="thm res" id="math-131-r-531"><div class="th-m"><span class="th-k">Theorem 53.1</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-531">proof ↓</a></div><div class="th-b"><p><b class="th-n">$\mathbb R$ covers the circle.</b> $p : \mathbb R \to S^1 \subset \mathbb R^2$, $p(x) = (\cos 2\pi x, \sin 2\pi x)$, is a covering map. We already know it is an open quotient map. Intuitively, the preimage of a small arc $U \subset S^1$ is repeated copies of an interval.</p></div></div>
+      <div class="thm res" id="math-131-r-covopen"><div class="th-m"><span class="th-k">Fact</span><a class="th-pf" href="#math-131-p-covopen">proof ↓</a></div><div class="th-b"><p><b class="th-n">Covering maps are open.</b> A covering map is always an open map.</p></div></div>
+      <div class="thm res" id="math-131-r-533"><div class="th-m"><span class="th-k">Theorem 53.3</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-533">proof ↓</a></div><div class="th-b"><p><b class="th-n">Products.</b> If $p : E \to B$ and $p' : E' \to B'$ are covering maps, so is $p \times p' : E \times E' \to B \times B'$.</p></div></div>
+      <div class="thm res" id="math-131-r-532"><div class="th-m"><span class="th-k">Theorem 53.2</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-532">proof ↓</a></div><div class="th-b"><p><b class="th-n">Restricting to a subspace.</b> If $p : E \to B$ is a covering map and $A \subset B$ is a subspace, then $p|_{p^{-1}(A)} : p^{-1}(A) \to A$ is also a covering map.</p></div></div>
+      <div class="thm exs"><div class="th-m"><span class="th-k">Examples</span></div><div class="th-b"><ul>
+        <li><strong>Trivial cover.</strong> The simplest example: fix $n \in \mathbb N$, let $B$ be any space, $E = B \times \{1, \ldots, n\}$, and $p : E \to B$ the projection. We literally have $n$ copies. This is a degree-$n$ (or $n$-sheeted) cover.</li>
+        <li><strong>Non-example.</strong> The projection of $S^1$ onto the segment $[-1,1]$ of the $x$-axis is not a covering map: the preimage of a neighborhood of an endpoint is a single arc folded over it, not disjoint homeomorphic copies.</li>
+        <li><strong>Torus.</strong> $p \times p : \mathbb R^2 \to S^1 \times S^1 = T$ is a covering map, with $p$ as in Theorem 53.1. Think of $T$ as the surface of a donut: $S^1 \times$ an interval is a cylinder, and the circle is the quotient of an interval gluing its endpoints, so gluing the ends of the cylinder gives the donut. The covering wraps the unit squares of the grid in $\mathbb R^2$ onto $T$.</li>
+        <li><strong>Figure eight.</strong> The figure eight is the subspace $(S^1 \times \{b_0\}) \cup (\{b_0\} \times S^1)$ of $T$. Its preimage under $p \times p$ is the grid of horizontal and vertical integer lines in $\mathbb R^2$, so by Theorem 53.2 the grid is an $\infty$-sheeted covering space of the figure eight.</li>
+      </ul></div></div>
+      <nav class="pager"><a class="prev" href="#math-131-t9"><small>Previous</small>9 · Compactness</a><a class="next" href="#math-131-proofs"><small>Next</small>Proofs</a></nav>
     </section>
 
     <!-- ============================ PROOFS ============================ -->
@@ -1330,6 +1673,8 @@
         <div class="pf-body"><p><b class="th-n">Path connected ⇒ connected.</b> Let $X$ be path connected, and suppose it has a separation $U, V$. Choose $x \in U$, $y \in V$, and a path $\gamma : [0,1] \to X$ with $\gamma(0) = x$, $\gamma(1) = y$. Consider $\gamma^{-1}(U), \gamma^{-1}(V) \subset [0,1]$. They are open (since $\gamma$ is continuous), disjoint, nonempty ($0$ and $1$), and cover $[0,1]$. So they form a separation of $[0,1]$, which is impossible since $[0,1]$ is connected. <span class="qed">∎</span></p></div></div></div>
       <div class="pf" id="math-131-p-rn"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-rn">↑ statement</a></div><div class="th-b">
         <div class="pf-body"><p><b class="th-n">$\mathbb R^n$ is path connected.</b> For any $x = (x_1, \ldots, x_n)$ and $y = (y_1, \ldots, y_n)$, take the convex combination $\gamma : [0,1] \to \mathbb R^n$, $\gamma(t) = (1-t)\,x + t\,y$. It is continuous, with $\gamma(0) = x$ and $\gamma(1) = y$. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-rk"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-d-pc">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">$\mathbb R_K$ is connected but not path connected.</b> <em>Connected:</em> on $(-\infty, 0]$ and on $(0, \infty)$ the subspace topology from $\mathbb R_K$ is the standard one, since $K$ is already closed in $(0,\infty)$ with the standard topology. So $(-\infty, 0]$ and $(0,\infty)$ are connected. Every basic neighborhood $(a,b) - K$ of $0$ meets $(0,\infty)$, so $0$ is in its closure and $[0,\infty)$ is connected (it lies between $(0,\infty)$ and its closure). Then $\mathbb R_K = (-\infty,0] \cup [0,\infty)$ is a union of connected sets with a common point.</p>
+        <p><em>Not path connected:</em> suppose $\gamma : [0,1] \to \mathbb R_K$ is a path from $0$ to $1$. Its image is connected in $\mathbb R_K$, hence in the coarser standard topology, so it contains $[0,1]$. The image is compact, and $K$ is closed in $\mathbb R_K$, so $K = K \cap \gamma([0,1])$ is compact. But $K$ is an infinite discrete subspace, which is not compact. <span class="qed">∎</span></p></div></div></div>
 
       <h3>Compactness</h3>
       <div class="pf" id="math-131-p-rnc"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-d-cpt">↑ statement</a></div><div class="th-b">
@@ -1351,8 +1696,32 @@
         <p><b class="th-n">Theorems 26.5, 26.6.</b> <b>(1)</b> <span class="tag">Added</span>Let $\mathcal V$ cover $f(X)$ by sets open in $Y$. Then $\{f^{-1}(V) : V \in \mathcal V\}$ is an open cover of $X$, so it has a finite subcover $f^{-1}(V_1), \ldots, f^{-1}(V_n)$, and $V_1, \ldots, V_n$ cover $f(X)$.</p>
         <p><b>(2)</b> Assume $X$ is compact, $f$ is injective and continuous, and $Y$ is Hausdorff. We want to show $X$ is homeomorphic to $f(X)$ (subspace topology) via $f$. Indeed, $f$ is bijective onto its image (injective, restricted to the image) and continuous. For continuity of the inverse, take $U \subset X$ open. Then $X - U$ is closed, hence compact (closed in compact), so $f(X - U) \subset Y$ is compact (part 1). A compact subset of a Hausdorff space is closed, so $f(X - U)$ is closed and $Y - f(X - U)$ is open. Using injectivity, $f(U) \cap f(X - U) = \varnothing$, so $f(U) = f(X) \cap \big(Y - f(X - U)\big)$, which is open in the subspace topology. <span class="qed">∎</span></p>
         </div></div></div>
+      <div class="pf" id="math-131-p-coarser"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-coarser">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Changing the topology.</b> If $\mathcal U' \subset \mathcal U$, the identity map $(X, \mathcal U) \to (X, \mathcal U')$ is continuous, since every $\mathcal U'$-open set is $\mathcal U$-open. Continuous images of compact (26.5) and connected (23.5) spaces are compact and connected. For Hausdorff: disjoint open sets separating two points stay open in any finer topology. <span class="qed">∎</span></p></div></div></div>
+
       <div class="pf" id="math-131-p-277"><div class="th-m"><span class="th-k">Proof</span><span class="tag src">WS 10</span><a class="th-pf" href="#math-131-r-277">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 27.7.</b> <em>Step 1:</em> for any nonempty open $U$ and any point $x$, there is a nonempty open $V \subset U$ with $x \notin \bar V$. Pick $y \in U$ with $y \ne x$; this is possible since $U \ne \{x\}$, as $x$ isn’t isolated. Take disjoint open $W_1 \ni x$ and $W_2 \ni y$, and let $V = W_2 \cap U$. Then $V \subset X - W_1$, which is closed, so $\bar V$ misses $x$. <em>Step 2:</em> let $f : \mathbb N \to X$ be any function and $x_n = f(n)$. By step 1, get nonempty open $X \supset V_1 \supset V_2 \supset \cdots$ with $x_n \notin \bar V_n$. The sets $\bar V_n$ are nested, nonempty, and closed, so $\bigcap \bar V_n \ne \varnothing$. A point in the intersection is no $x_n$, so $f$ is not surjective and $X$ is uncountable. <span class="qed">∎</span></p></div></div></div>
-      <nav class="pager"><a class="prev" href="#math-131-t9"><small>Previous</small>9 · Compactness</a><a class="next" href="#math-131-t1"><small>Back to</small>1 · Topologies &amp; bases</a></nav>
+
+      <h3>Fundamental group and covering spaces</h3>
+      <div class="pf" id="math-131-p-511"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-511">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Lemma 51.1.</b> <em>Reflexive:</em> $F(t,s) = \gamma(t)$. <em>Symmetric:</em> if $F$ is a homotopy from $\gamma$ to $\gamma'$, then $G(t,s) = F(t, 1-s)$ goes from $\gamma'$ to $\gamma$. <em>Transitive:</em> if $F$ goes from $\gamma$ to $\gamma'$ and $F'$ from $\gamma'$ to $\gamma''$, let $G(t,s) = F(t, 2s)$ for $s \le \tfrac12$ and $F'(t, 2s-1)$ for $s \ge \tfrac12$. The two pieces agree at $s = \tfrac12$ (both give $\gamma'(t)$) and are continuous on closed sets, so $G$ is continuous by the pasting lemma. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-sline"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-sline">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Straight-line homotopy.</b> At each time $t$, take the points $\gamma(t)$ and $\gamma'(t)$ and move along the line between them: $F(t,s) = (1-s)\,\gamma(t) + s\,\gamma'(t)$ for $(t,s) \in I^2$. It is continuous because it is continuous in each coordinate: if $\gamma(t) = (a(t), b(t))$ and $\gamma'(t) = (a'(t), b'(t))$, then
+        $$F(t,s) = \big((1-s)\,a(t) + s\,a'(t),\ (1-s)\,b(t) + s\,b'(t)\big),$$
+        which is clearly continuous. Also $F(t,0) = \gamma(t)$, $F(t,1) = \gamma'(t)$, $F(0,s) = x_0$, and $F(1,s) = x_1$. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-512"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-512">↑ statement</a></div><div class="th-b"><div class="pf-body">
+        <p><b class="th-n">Theorem 51.2.</b> <em>Well defined:</em> if $F : \gamma_1 \simeq \gamma_1'$ and $G : \gamma_2 \simeq \gamma_2'$, then $H(t,s) = F(2t, s)$ for $t \le \tfrac12$ and $G(2t-1, s)$ for $t \ge \tfrac12$ is a homotopy $\gamma_1 * \gamma_2 \simeq \gamma_1' * \gamma_2'$ (pasting lemma).</p>
+        <p><em>Reparametrization:</em> if $\varphi : I \to I$ is continuous with $\varphi(0) = 0$ and $\varphi(1) = 1$, then $\gamma \circ \varphi \simeq \gamma$ via $F(t,s) = \gamma\big((1-s)\varphi(t) + st\big)$.</p>
+        <p><em>Associativity and identity:</em> $(\gamma_1 * \gamma_2) * \gamma_3$ and $e_{x_0} * \gamma$ are reparametrizations of $\gamma_1 * (\gamma_2 * \gamma_3)$ and $\gamma$ by piecewise linear $\varphi$ of this kind (for the identity, $\varphi(t) = 0$ on $[0, \tfrac12]$ and $2t - 1$ after); similarly for $\gamma * e_{x_0}$.</p>
+        <p><em>Inverses:</em> $H(t,s) = \gamma\big(2t(1-s)\big)$ for $t \le \tfrac12$ and $\gamma\big((2 - 2t)(1-s)\big)$ for $t \ge \tfrac12$ is a homotopy from $\gamma * \bar\gamma$ (at $s = 0$) to $e_{x_0}$ (at $s = 1$): the loop goes out only as far as $\gamma(1-s)$ and comes back. Swapping $\gamma$ and $\bar\gamma$ gives $\bar\gamma * \gamma \simeq e_{x_0}$. <span class="qed">∎</span></p>
+      </div></div></div>
+      <div class="pf" id="math-131-p-522"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-522">↑ statement</a></div><div class="th-b"><div class="pf-body">
+        <p><b class="th-n">Corollary 52.2.</b> Let $\alpha : I \to X$ be a path from $x_0$ to $x_1$ (path connected). For $[\gamma] \in \pi_1(X, x_0)$, let $\hat\alpha([\gamma]) = [\bar\alpha * \gamma * \alpha] \in \pi_1(X, x_1)$: go back along $\alpha$, do the loop, and return. It is well defined by Theorem 51.2. Let $e_{x_0}$ be the constant path at $x_0$. <em>Homomorphism:</em>
+        $$\begin{aligned}\hat\alpha([\gamma_1] * [\gamma_2]) &amp;= \hat\alpha([\gamma_1 * \gamma_2]) = [\bar\alpha * \gamma_1 * \gamma_2 * \alpha] = [\bar\alpha * \gamma_1 * e_{x_0} * \gamma_2 * \alpha] \\ &amp;= [\bar\alpha * \gamma_1 * \alpha * \bar\alpha * \gamma_2 * \alpha] = [\bar\alpha * \gamma_1 * \alpha] * [\bar\alpha * \gamma_2 * \alpha] = \hat\alpha([\gamma_1]) * \hat\alpha([\gamma_2]).\end{aligned}$$</p>
+        <p><em>Bijective:</em> the inverse of $\hat\alpha$ is $\hat{\bar\alpha}$, $[\delta] \mapsto [\alpha * \delta * \bar\alpha]$. Just work out that $\hat{\bar\alpha}\,\hat\alpha([\gamma]) = [\alpha * \bar\alpha * \gamma * \alpha * \bar\alpha] = [\gamma]$, and similarly the other way. <span class="qed">∎</span></p>
+      </div></div></div>
+      <div class="pf" id="math-131-p-fstar"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-fstar">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Induced homomorphism.</b> $f \circ \gamma$ is a loop at $y_0$. If $F$ is a homotopy $\gamma \simeq \gamma'$, then $f \circ F$ is a homotopy $f \circ \gamma \simeq f \circ \gamma'$, so $f_*$ is well defined. And $f \circ (\gamma_1 * \gamma_2) = (f \circ \gamma_1) * (f \circ \gamma_2)$ straight from the definition of $*$, so $f_*$ is a homomorphism. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-531"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-531">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 53.1.</b> (Omitted in lecture.) Let $U \subset S^1$ be the open half-circle of points with positive first coordinate. Then $p^{-1}(U) = \bigcup_{n \in \mathbb Z} V_n$ with $V_n = (n - \tfrac14, n + \tfrac14)$, which are disjoint and open. On the closed interval $\bar V_n$, $p$ is injective and continuous onto a closed arc, so it is a homeomorphism (compact to Hausdorff, 26.6). Restricting, $p|_{V_n} : V_n \to U$ is a homeomorphism. So $U$ is evenly covered. The same argument works for the half-circles with negative first coordinate and with positive or negative second coordinate, and these four cover $S^1$. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-covopen"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-covopen">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Covering maps are open.</b> Take some open $W$ upstairs in $E$, and some point $b \in p(W)$, say $b = p(x)$ with $x \in W$. Find an evenly covered open $U$ around $b$ and take its preimage, $p^{-1}(U) = \bigsqcup V_\alpha$, with $x \in V_\beta$ say. Intersect that sheet with $W$: $W \cap V_\beta$ is open in $V_\beta$. Then push it back down: $p|_{V_\beta}$ is a homeomorphism onto the open set $U$, so $p(W \cap V_\beta)$ is open in $B$. It contains $b$ and lies in $p(W)$, so $p(W)$ is open. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-533"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-533">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 53.3.</b> $p \times p'$ is continuous and surjective. Given $(b, b')$, take evenly covered neighborhoods $U \ni b$ and $U' \ni b'$, with $p^{-1}(U) = \bigsqcup V_\alpha$ and $p'^{-1}(U') = \bigsqcup V'_\beta$. Then $(p \times p')^{-1}(U \times U') = \bigsqcup_{\alpha,\beta} V_\alpha \times V'_\beta$, a disjoint union of open sets, and each $V_\alpha \times V'_\beta \to U \times U'$ is a product of homeomorphisms, hence a homeomorphism. <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-532"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-532">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 53.2.</b> Let $E_0 = p^{-1}(A)$ and $p_0 = p|_{E_0}$, which is continuous and surjective onto $A$. Given $a \in A$, take an evenly covered $U \ni a$ with $p^{-1}(U) = \bigsqcup V_\alpha$. Then $U \cap A$ is a neighborhood of $a$ in $A$, and $p_0^{-1}(U \cap A) = \bigsqcup (V_\alpha \cap E_0)$, a disjoint union of sets open in $E_0$. Each $V_\alpha \cap E_0 \to U \cap A$ is the restriction of the homeomorphism $V_\alpha \to U$ to the preimage of $U \cap A$, so it is a homeomorphism. <span class="qed">∎</span></p></div></div></div>
+      <nav class="pager"><a class="prev" href="#math-131-t10"><small>Previous</small>10 · Fundamental group &amp; covering spaces</a><a class="next" href="#math-131-t1"><small>Back to</small>1 · Topologies &amp; bases</a></nav>
     </section>
   </main>
 </div>

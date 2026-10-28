@@ -130,6 +130,11 @@ dfn { font-style: normal; font-weight: 600; }
 /* logic */
 .logic { font-family: var(--serif); font-size: 1.02em; white-space: nowrap; }
 .formula { margin: 0.8em 0 1.1em; padding-left: 20px; font-size: 1.04em; overflow-x: auto; white-space: nowrap; }
+/* small collapsible (e.g. a formal version of an argument) */
+details.more { margin: 0.4em 0 1.1em; padding-left: 20px; border-left: 2px solid var(--rule); font-size: 0.94em; }
+details.more summary { font-family: var(--sans); font-size: 13px; font-weight: 600; color: var(--ink-3); cursor: pointer; margin-bottom: 0.3em; }
+details.more summary:hover { color: var(--accent); }
+details.more ol, details.more ul { margin-bottom: 0.4em; }
 
 /* notes: handout supplements, corrections, clarifications */
 .tag { display: inline-block; font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase;
