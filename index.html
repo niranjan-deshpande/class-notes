@@ -51,7 +51,7 @@
     <header class="course-head">
       <p class="kicker">Phil 147</p>
       <h1>Philosophy of Language</h1>
-      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–16</p>
+      <p class="byline">Prof. Bernhard Nickel · Fall 2026 · Lectures 1–17</p>
       <p class="lede">My lecture notes, cleaned up and organized by lecture, filled in from the handouts where the notes were thin or abbreviated. Green boxes and tags mark material added from the handout.</p>
     </header>
 
@@ -214,6 +214,13 @@
         <div><dt>Generalized implicature</dt><dd>A conversational implicature that arises across contexts, like or-not-and and some-not-all (vs. particularized, like the letter of recommendation).</dd></div>
         <div><dt>Scalar implicature</dt><dd>An implicature derived by reasoning about more informative alternatives that can be ordered on a scale.</dd></div>
         <div><dt>Unasserted context</dt><dd>A position in a sentence whose content the speaker isn’t committed to, e.g. under negation or in a conditional’s antecedent.</dd></div>
+      </dl>
+
+      <h3><a href="#phil-147-lec-17">Lec 17 · Davis</a></h3>
+      <dl class="gloss">
+        <div><dt>Overgeneration problem</dt><dd>The Gricean theory predicts implicatures that aren’t there, since a statement has many more informative alternatives.</dd></div>
+        <div><dt>Undergeneration problem</dt><dd>The Gricean theory fails to deliver implicatures we want, since there are many ways to reconcile an utterance with the Cooperative Principle.</dd></div>
+        <div><dt>Coherence relation</dt><dd>A customary relation linking consecutive sentences (“John took a train to Istanbul. He has family there.”); on the non-Gricean story these limit which interpretations are available.</dd></div>
       </dl>
     </section>
 
@@ -1073,14 +1080,52 @@
         <p>The or-not-and and some-not-all implicatures are <dfn>generalized</dfn> conversational implicatures, unlike <dfn>particularized</dfn> ones such as the letter of recommendation. They are also <dfn>scalar implicatures</dfn>: they rely on reasoning about alternatives ordered from more to less informative, which can be arranged on a scale.</p></div></div>
       <p>Why do we try to fit natural language onto first-order logic at all? One reason: we really understand how proofs work in first-order logic.</p>
 
-      <h3>Implicatures in complex sentences</h3>
-      <div class="thm note"><div class="th-m"><span class="tag">Handout</span></div><div class="th-b">
-        <p><b>Unasserted contexts.</b> Negation creates an unasserted context: “It is not the case that it is raining” doesn’t commit you to “it is raining.” Conjunction creates an asserted one. The antecedent of a conditional is unasserted. Since for Grice an implicature arises from <em>asserting</em> something, it shouldn’t arise there, and it doesn’t: “If Mary had a cocktail or dessert, she’ll have enjoyed her dinner extra much” doesn’t mean “…a cocktail or dessert but not both….” Good for Grice.</p>
-        <p><b>The material conditional strikes again.</b> “If Nickel has two heads, he has three heads” is true as a material conditional. The Gricean says: if you know the antecedent is false, just assert its negation. But then asserting “If Mary and Jane are both home, you won’t be locked out” should implicate that the less informative “If Mary or Jane are home, you won’t be locked out” is false. As a material conditional, that comes to “Mary or Jane are home, and you’ll be locked out,” which is definitely not conveyed.</p>
-        <p><b>“And” and the order of events.</b> “The king died and a republic was declared” conveys a different order than “A republic was declared and the king died.” If the order were only an implicature, “If the king died and a republic was declared, Mary is happy” and “If a republic was declared and the king died, Mary is unhappy” couldn’t both be true, but they can. A third option <span class="src">(Partee)</span>: the past tense talks about a contextually restricted time frame, and the second conjunct’s time frame is set to follow the first’s.</p>
-      </div></div>
+      <h3>Implicatures in unasserted contexts</h3>
+      <p>For Grice, “say” means <em>assert</em>: commit to the truth of. Recall from <a href="#phil-147-lec-2">Frege</a> that we can use a sentence without committing to its truth, as with conditionals, “it is not the case that,” and so on. You can assert a conditional without asserting its antecedent. <span class="tag">Handout</span>Negation creates an <dfn>unasserted context</dfn> (“It is not the case that it is raining” doesn’t commit you to “it is raining”); conjunction creates an asserted one.</p>
+      <p>So what happens when you put a sentence that would carry an implicature into the antecedent of a conditional? It seems it no longer conveys the implicature: “If Mary had a cocktail or dessert, she’ll have enjoyed her dinner extra much” doesn’t mean “…a cocktail or dessert but not both….” Since an implicature arises from asserting, this is good for Grice.</p>
 
-      <nav class="pager"><a class="prev" href="#phil-147-lec-15"><small>Previous</small>Lec 15 · Grice: logic &amp; conversation I</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
+      <h3>Conditionals</h3>
+      <p>Grice wants the natural-language counterparts of the logical operators to mean the same thing as the operators. But conditionals in logic are weird: a false antecedent always makes the conditional true (<span class="tag">Handout</span>“If Nickel has two heads, he has three heads”).</p>
+      <p>Also, “if P or Q, then x” logically implies “if P and Q, then x,” so it is more informative. By Grice’s reasoning, then, asserting “if P and Q, then x” should implicate that “if P or Q, then x” is false, which for a material conditional means “P or Q, and not x.” This is weird! <span class="tag">Handout</span>Asserting “If Mary and Jane are both home, you won’t be locked out” would convey “Mary or Jane is home, and you’ll be locked out,” which is definitely not conveyed.</p>
+
+      <h3>“And” and the order of events</h3>
+      <p><span class="tag">Handout</span>“The king died and a republic was declared” conveys a different order than “A republic was declared and the king died.” The Gricean says English “and” means ∧ and the order is an implicature. But consider:</p>
+      <ul class="ex" style="list-style:none">
+        <li>(28) If the king died and a republic was declared, Mary is happy.</li>
+        <li>(29) If a republic was declared and the king died, Mary is unhappy.</li>
+      </ul>
+      <p>It seems possible for both to be true: Mary likes the king (she doesn’t want him dead) but also thinks monarchy is bad. So clearly the two antecedents are different. Do they express different propositions? If so, the ordering effect is not just an implicature, since it affects truth conditions. <span class="tag">Handout</span>A third option <span class="src">(Partee)</span>: the past tense talks about a contextually restricted time frame, and the second conjunct’s time frame is set to follow the first’s. That’s tricky: how do we decide how to slice these intervals?</p>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-15"><small>Previous</small>Lec 15 · Grice: logic &amp; conversation I</a><a class="next" href="#phil-147-lec-17"><small>Next</small>Lec 17 · Davis: against Grice</a></nav>
+    </section>
+
+    <!-- ============================ LEC 17 ============================ -->
+    <section class="lec" id="phil-147-lec-17" data-n="17" data-short="Davis: against Grice">
+      <h2><span class="num">Lecture 17</span>Davis: against the Gricean theory</h2>
+      <p class="reading">Davis, <i>Implicature</i></p>
+
+      <h3>The charge: argument by exhaustion</h3>
+      <p>Davis thinks the whole Gricean machinery is bankrupt. The argument is by exhaustion: a litany of examples shows that the program is degenerate.</p>
+
+      <h3>The overgeneration problem</h3>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Overgeneration</span></div><div class="th-b"><p>The Gricean theory often predicts too much: it predicts implicatures that aren’t there.</p></div></div>
+      <p>Implicatures depend on reasoning via comparison with alternatives. But for a given statement there are so many things the speaker could have said instead! “P or Q” is less informative than “P and Q,” but also than “P or Q but not both.” So the same reasoning would have “or” implicate both “not (P and Q)” and “not (P or Q but not both),” which together contradict “P or Q.” Yikes!</p>
+      <p>The response: “P or Q but not both” is longer and more cumbersome, so it isn’t a real alternative. Other alternatives can be ruled out by appeal to the speaker’s uncertainty, and that response does seem persuasive in some cases, though it isn’t clear it always works. But it is possibly just a series of ad hoc moves.</p>
+
+      <h3>The undergeneration problem</h3>
+      <div class="thm def"><div class="th-m"><span class="th-k th-term">Undergeneration</span></div><div class="th-b"><p>The Gricean theory often fails to deliver the implicatures we want.</p></div></div>
+      <p>Recall that Grice’s reasoning appeals both to alternatives to what was said and to understanding why the speaker deviates from the <a href="#phil-147-lec-15">Cooperative Principle</a>. What about figures of speech? On a sunny day, I say “What a crappy day!” The issue is that there are many possible ways of reconciling this with the Cooperative Principle: I could be sarcastic, I could have weird views about the weather, and so on.</p>
+      <p>The <strong>stranded motorist</strong>: a driver about to run out of gas asks a passerby “Where can I get gas?” The passerby says “There’s a gas station two blocks away.” Technically this isn’t relevant, since the station may be closed! So Grice says the motorist infers that the passerby believes it’s open, to restore relevance. But there are many <em>other</em> ways to restore relevance: if the station is closed, it’s relevant to mention that too. So the belief that it’s open isn’t actually required.</p>
+      <p>One response: only one belief (that it’s open) makes sense of the utterance as a helpful response to the question. But why does it make sense?</p>
+      <ul>
+        <li><strong>Path 1:</strong> it would be uncooperative, or mean, to tell me where I can’t get gas. But this is the wrong notion of cooperation. That I’ll be helpful is a cultural assumption; it doesn’t follow from our having a conversation. And if we assume the cultural convention, we can posit it directly and do away with Grice’s relevance. Grice wants to explain implicature via rational action, not social conventions.</li>
+        <li><strong>Path 2:</strong> in this type of situation, my utterance usually conveys that it’s open. The issue is that this is obviously circular: it assumes the implicature.</li>
+      </ul>
+
+      <h3>A non-Gricean story: coherence relations</h3>
+      <p>Consider “John took a train from Paris to Istanbul. He has family there.” This seems coherent even though the two sentences are seemingly unrelated: there’s a <dfn>coherence relation</dfn> between them. We don’t freely generate relevance relations. Rather, we’re limited by custom to a set of them, and then use Gricean reasoning to decide among them. For example, we can’t interpret “John took a train from Paris to Istanbul. He likes spinach,” even though there are coherent stories we could tell. This is non-Gricean because conventions limit us.</p>
+
+      <nav class="pager"><a class="prev" href="#phil-147-lec-16"><small>Previous</small>Lec 16 · Grice: logic &amp; conversation II</a><a class="next" href="#phil-147-defs"><small>Back to</small>Definitions</a></nav>
     </section>
   </main>
 </div>
@@ -1113,7 +1158,7 @@
     <header class="course-head">
       <p class="kicker">Math 131</p>
       <h1>Topology</h1>
-      <p class="byline">Fall 2026 · Munkres §12–27, 51–54</p>
+      <p class="byline">Fall 2026 · Munkres §12–27, 51–55</p>
     </header>
 
     <!-- ============================ 1 ============================ -->
@@ -1508,7 +1553,7 @@
     <!-- ============================ 10 ============================ -->
     <section class="topic" id="math-131-t10" data-n="10" data-short="Fundamental group &amp; covering spaces">
       <h2><span class="num">Topic 10</span>The fundamental group and covering spaces</h2>
-      <p class="reading">Munkres §51–54</p>
+      <p class="reading">Munkres §51–55</p>
 
       <h3>Homotopy of paths</h3>
       <p>Recall that a <a href="#math-131-d-pc">path</a> in a space $X$ is a continuous $\gamma : [0,1] \to X$. Write $I = [0,1]$. Now we want to compare paths.</p>
@@ -1570,7 +1615,17 @@
         <p>$$[\gamma] \longmapsto \tilde\gamma_{e_0}(1).$$</p>
         <p>That is, take the homotopy class in the base, choose a representative $\gamma$, lift it up to $E$ starting at $e_0$ using the path lifting lemma, and take the endpoint of the lifted path upstairs. This lift may not be a loop! The map is well defined (a different representative gives the same output) because of the homotopy lifting theorem.</p></div></div>
       <div class="thm res" id="math-131-r-544"><div class="th-m"><span class="th-k">Theorem 54.4</span><a class="th-pf" href="#math-131-p-544">proof ↓</a></div><div class="th-b"><p><b class="th-n">The lifting correspondence.</b> Let $p : E \to B$ be a covering map and suppose $E$ is path connected. Fix $b_0 \in B$ and choose $e_0 \in E$ so $p(e_0) = b_0$. Then the lifting correspondence $\varphi_{e_0} : \pi_1(B, b_0) \to p^{-1}(b_0)$ is surjective. If $E$ is simply connected, then $\varphi_{e_0}$ is a bijection.</p><p>This theorem is how we’ll prove that a fundamental group is nontrivial.</p></div></div>
-      <div class="thm res" id="math-131-r-545"><div class="th-m"><span class="th-k">Theorem 54.5</span><span class="tag">Added</span><a class="th-pf" href="#math-131-p-545">proof ↓</a></div><div class="th-b"><p><b class="th-n">The circle.</b> $\pi_1(S^1, x_0) \cong \mathbb Z$.</p></div></div>
+      <div class="thm res" id="math-131-r-545"><div class="th-m"><span class="th-k">Theorem 54.5</span><a class="th-pf" href="#math-131-p-545">proof ↓</a></div><div class="th-b"><p><b class="th-n">The circle.</b> $\pi_1(S^1, x_0) \cong \mathbb Z$.</p></div></div>
+
+      <h3>Retractions and the Brouwer fixed point theorem</h3>
+      <div class="thm def" id="math-131-d-retract"><div class="th-m"><span class="th-k th-term">Retraction</span></div><div class="th-b"><p>Let $X$ be a topological space and $A \subset X$ a subspace. A continuous map $r : X \to A$ is a <dfn>retraction</dfn> if $r(a) = a$ for all $a \in A$. If one exists, $A$ is a <dfn>retract</dfn> of $X$.</p></div></div>
+      <div class="thm res" id="math-131-r-retsurj"><div class="th-m"><span class="th-k">Fact</span><span class="tag src">PS</span></div><div class="th-b"><p><b class="th-n">Retractions are surjective on $\pi_1$.</b> If $r : X \to A$ is a retraction and $a \in A$, then $r_* : \pi_1(X, a) \to \pi_1(A, a)$ is surjective.</p><p>So for a retraction to exist, the topology of $X$ has to be at least as complicated as that of $A$: otherwise $r$ would have to break open the loops of $A$, which it can’t do continuously.</p></div></div>
+      <div class="thm res" id="math-131-r-552"><div class="th-m"><span class="th-k">Theorem 55.2</span><a class="th-pf" href="#math-131-p-552">proof ↓</a></div><div class="th-b"><p><b class="th-n">No-retraction theorem.</b> There is no retraction from the closed disk $\bar D = B^2$ onto $S^1$.</p></div></div>
+      <div class="thm res" id="math-131-r-556"><div class="th-m"><span class="th-k">Theorem 55.6</span><a class="th-pf" href="#math-131-p-556">proof ↓</a></div><div class="th-b"><p><b class="th-n">Brouwer fixed point theorem.</b> If $f : \bar D \to \bar D$ is continuous, then there is $x \in \bar D$ with $f(x) = x$ (a <dfn>fixed point</dfn>).</p></div></div>
+      <div class="thm exs"><div class="th-m"><span class="th-k">Examples</span></div><div class="th-b"><ul>
+        <li>A typical retract: an arc $A$ with lots of weird things branching off it; the retraction pulls everything back into $A$.</li>
+        <li>There <em>is</em> a retraction from the punctured disk, $r : \bar D - \{(0,0)\} \to S^1$, $v \mapsto v / \lVert v \rVert$. Here $\bar D$ is the closed disk, and $D = \{(x,y) : x^2 + y^2 \lt 1\}$ is the open disk.</li>
+      </ul></div></div>
       <nav class="pager"><a class="prev" href="#math-131-t9"><small>Previous</small>9 · Compactness</a><a class="next" href="#math-131-proofs"><small>Next</small>Proofs</a></nav>
     </section>
 
@@ -1747,7 +1802,12 @@
         <p><b class="th-n">Theorem 54.4.</b> <em>Surjective:</em> let $e_1 \in p^{-1}(b_0)$. Since $E$ is path connected, there is a path $\alpha$ in $E$ from $e_0$ to $e_1$. Then $\gamma = p \circ \alpha$ is a loop at $b_0$, and $\alpha$ is a lift of $\gamma$ starting at $e_0$, so by uniqueness $\alpha = \tilde\gamma$ and $\varphi_{e_0}([\gamma]) = \alpha(1) = e_1$.</p>
         <p><em>Injective if $E$ is simply connected:</em> suppose $\varphi_{e_0}([\gamma]) = \varphi_{e_0}([\gamma']) = e_1$. Then $\tilde\gamma$ and $\tilde\gamma'$ are both paths in $E$ from $e_0$ to $e_1$. In a simply connected space any two paths with the same endpoints are homotopic: $\tilde\gamma * \bar{\tilde\gamma}'$ is a loop at $e_0$, so it is $\simeq e_{e_0}$, and then $\tilde\gamma \simeq \tilde\gamma * \bar{\tilde\gamma}' * \tilde\gamma' \simeq \tilde\gamma'$. If $\tilde F$ is such a homotopy, then $p \circ \tilde F$ is a path homotopy from $\gamma$ to $\gamma'$, so $[\gamma] = [\gamma']$. <span class="qed">∎</span></p>
       </div></div></div>
-      <div class="pf" id="math-131-p-545"><div class="th-m"><span class="th-k">Proof</span><span class="tag">Added</span><a class="th-pf" href="#math-131-r-545">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 54.5.</b> Take the covering $p : \mathbb R \to S^1$ of Theorem 53.1, $b_0 = (1,0)$ and $e_0 = 0$, so $p^{-1}(b_0) = \mathbb Z$. $\mathbb R$ is simply connected (straight-line homotopy), so by Theorem 54.4 the lifting correspondence $\varphi : \pi_1(S^1, b_0) \to \mathbb Z$ is a bijection. <em>Homomorphism:</em> let $[\gamma], [\delta] \in \pi_1(S^1, b_0)$ with lifts $\tilde\gamma, \tilde\delta$ from $0$ ending at $n$ and $m$. Since $p(n + x) = p(x)$, the path $t \mapsto n + \tilde\delta(t)$ is a lift of $\delta$ starting at $n$, so $\tilde\gamma * (n + \tilde\delta)$ is the lift of $\gamma * \delta$ starting at $0$, and it ends at $n + m$. So $\varphi([\gamma] * [\delta]) = n + m$. Since $S^1$ is path connected, the base point doesn’t matter (Corollary 52.2). <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-545"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-545">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 54.5.</b> Take the covering $p : \mathbb R \to S^1$ of Theorem 53.1, $x_0 = (1,0)$ and $e_0 = 0$, so $p^{-1}(x_0) = \mathbb Z$: a lifted loop has to end at an integer. $\mathbb R$ is simply connected (straight-line homotopy), so by Theorem 54.4 the lifting correspondence $\varphi : \pi_1(S^1, x_0) \to \mathbb Z$ is a bijection. We then check it is a homomorphism, $\varphi([\gamma] * [\eta]) = \tilde\gamma(1) + \tilde\eta(1)$. Suppose $\tilde\gamma, \tilde\eta$ are the lifts starting at $e_0 = 0$, ending at $n$ and $m$. Since $p(n + x) = p(x)$, the path $\tilde\eta + n$ is the unique lift of $\eta$ starting at $n$. The lift of the concatenation is the lift of $\gamma$ starting at $0$, followed by the lift of $\eta$ starting at the endpoint of the previous lift: $\tilde\gamma * (n + \tilde\eta)$, which ends at $n + m$. So $\varphi([\gamma] * [\eta]) = n + m$. Since $S^1$ is path connected, the base point doesn’t matter (Corollary 52.2). <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-552"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-552">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 55.2.</b> If $r : \bar D \to S^1$ were a retraction, then $r_* : \pi_1(\bar D, x_0) \to \pi_1(S^1, x_0)$ would be surjective. But $\pi_1(\bar D, x_0)$ is trivial (straight-line homotopy, since $\bar D$ is convex) and $\pi_1(S^1, x_0) \cong \mathbb Z$ is not (Theorem 54.5). <span class="qed">∎</span></p></div></div></div>
+      <div class="pf" id="math-131-p-556"><div class="th-m"><span class="th-k">Proof</span><a class="th-pf" href="#math-131-r-556">↑ statement</a></div><div class="th-b"><div class="pf-body"><p><b class="th-n">Theorem 55.6.</b> Suppose $f(x) \ne x$ for all $x \in \bar D$. Consider the vector $v(x) = x - f(x)$, which is $\ne \vec 0$ for all $x$. Let $u(x) = v(x) / \lVert v(x) \rVert \in S^1$, a unit vector. Let $r(x) = x + t_x\, u(x)$, where $t_x \ge 0$ is the distance from $x$ to the circle along the ray $x + t\,u(x)$ (the ray from $f(x)$ through $x$, continued until it hits $S^1$). We claim $r$ is a retraction $\bar D \to S^1$, which is impossible by Theorem 55.2.</p>
+        <ul><li><em>Continuous:</em> all the ingredients are clearly continuous. There is a formula for $t_x$: solving $\lVert x + t\,u \rVert = 1$ gives $t_x = -\,x \cdot u + \sqrt{(x \cdot u)^2 + 1 - \lVert x \rVert^2}$, continuous in $x$. Boring.</li>
+        <li><em>Constant on the circle:</em> $r(\zeta) = \zeta$ if $\zeta \in S^1$, since then $t_\zeta = 0$ (each point is in its own shadow).</li></ul>
+        <p>Contradiction: $S^1$ is not simply connected, and $\bar D$ is. <span class="qed">∎</span></p></div></div></div>
       <nav class="pager"><a class="prev" href="#math-131-t10"><small>Previous</small>10 · Fundamental group &amp; covering spaces</a><a class="next" href="#math-131-t1"><small>Back to</small>1 · Topologies &amp; bases</a></nav>
     </section>
   </main>
